@@ -1,0 +1,12 @@
+.collapse__preview > div {
+  display: flex;
+  align-items: center;
+}
+
+.collapse__preview > div:first-child {
+  margin-bottom: 12px;
+}
+
+.collapse__preview pre {
+  margin-left: 16px;
+}

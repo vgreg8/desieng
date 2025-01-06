@@ -1,0 +1,11 @@
+.card__preview > div {
+  display: flex;
+}
+
+.card__preview > div:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.card__preview pre {
+  margin-left: 20px;
+}

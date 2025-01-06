@@ -1,0 +1,10 @@
+.sidenav__preview > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.sidenav__preview div pre {
+  width: 100%;
+  margin-top: 12px;
+}

@@ -1,0 +1,36 @@
+.od-badge {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 6px;
+  font-weight: 500;
+  color: var(--color-text-inverse);
+  border-radius: 4px;
+}
+
+.od-badge_status_new {
+  background-color: var(--color-accent-main);
+}
+
+.od-badge_status_waiting {
+  background-color: #F69134;
+}
+
+.od-badge_status_signed {
+  background-color: var(--color-accent-success);
+}
+
+.od-badge_status_expired {
+  background-color: #E94343;
+}
+
+.od-badge_size_s {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.od-badge_size_m {
+  font-size: 16px;
+  line-height: 22px;
+}
+

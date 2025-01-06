@@ -1,0 +1,17 @@
+.grid-decoration {
+  height: 200px;
+  margin: 12px 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-bg-secondary),
+    var(--color-bg-secondary) 10px,
+    var(--color-bg-primary) 10px,
+    var(--color-bg-primary) 20px
+  );
+}
+
+.grid-decoration div {
+  background-color: var(--color-bg-secondary);
+  border-left: 1px dashed var(--color-bg-accent);
+  border-right: 1px dashed var(--color-bg-accent);
+}

@@ -1,0 +1,63 @@
+.od-button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.od-button_view_primary {
+  padding: 8px 16px 8px 12px;
+  color: var(--color-text-inverse);
+  background-color: var(--color-accent-main);
+  border: none;
+  text-align: left;
+}
+
+.od-button_view_primary div {
+  margin-right: 8px;
+}
+
+.mix_status_success {
+  background-color: var(--color-accent-success);
+}
+
+.od-button_view_secondary {
+  padding: 8px 16px;
+  color: var(--color-accent-main);
+  border: 1px solid var(--color-accent-main);
+  background-color: var(--color-bg-primary);
+  text-align: center;
+}
+
+.od-button_view_secondary div {
+  display: none;
+}
+
+.od-button_view_transparent {
+  padding: 8px;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-primary);
+  border: none;
+}
+
+.od-button_view_transparent-inverse {
+  padding: 8px;
+  color: var(--color-text-inverse);
+  background-color: transparent;
+  border: none;
+}
+
+.od-button_view_transparent-inverse:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.od-button_view_transparent span {
+  display: none;
+}
+
+.od-button_view_transparent:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}

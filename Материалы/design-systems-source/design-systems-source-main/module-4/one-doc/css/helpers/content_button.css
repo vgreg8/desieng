@@ -1,0 +1,29 @@
+.btn__preview {
+  display: block;
+}
+
+.btn__preview > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.btn__preview > div:last-child {
+  margin-bottom: 0;
+}
+
+.btn__preview > div:last-child > .btn__wrapper {
+  background-color: var(--color-text-primary);
+  padding: 8px;
+}
+
+.btn__preview > div > pre {
+  width: 100%;
+  margin-left: 12px;
+}
+
+.btn__wrapper {
+  width: 200px;
+}

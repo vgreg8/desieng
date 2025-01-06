@@ -1,0 +1,12 @@
+.od-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  width: fit-content;
+}
+
+.od-link p {
+  margin-left: 4px;
+}

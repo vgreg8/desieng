@@ -1,0 +1,16 @@
+.user__preview > div {
+  display: flex;
+  align-items: center;
+}
+
+.user__preview > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.user__preview > div .od-user {
+  width: 220px;
+}
+
+.user__preview pre {
+  width: 100%;
+}

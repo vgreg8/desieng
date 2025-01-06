@@ -1,0 +1,10 @@
+.link__preview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link__preview pre {
+  width: 100%;
+  margin-left: 20px;
+}

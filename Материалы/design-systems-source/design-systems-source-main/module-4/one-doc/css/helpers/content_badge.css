@@ -1,0 +1,17 @@
+.badge__preview > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.badge__preview > div:last-child {
+  margin-bottom: 0;
+}
+
+.badge__preview pre {
+  width: 100%;
+}
+
+.badge__wrapper {
+  width: 200px;
+}

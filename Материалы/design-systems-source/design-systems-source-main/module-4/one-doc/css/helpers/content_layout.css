@@ -1,0 +1,33 @@
+.decoration-wrapper {
+  margin-bottom: 12px;
+  padding: 8px 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    #f4f3f5,
+    #f4f3f5 10px,
+    #fff 10px,
+    #fff 20px
+  );
+}
+
+.layout-decoration {
+  height: 200px;
+}
+
+.layout-decoration div {
+  background-color: #f4f3f5;
+  border-left: 1px dashed #7d00fb;
+  border-right: 1px dashed #7d00fb;
+}
+
+.layout-decoration-single-border {
+  height: 200px;
+  margin: 12px 0;
+}
+.layout-decoration-single-border div {
+  background-color: #f4f3f5;
+  border-left: 1px dashed #7d00fb;
+}
+.layout-decoration-single-border div:last-child {
+  border-right: 1px dashed #7d00fb;
+}

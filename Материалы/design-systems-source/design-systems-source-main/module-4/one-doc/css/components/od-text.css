@@ -1,0 +1,31 @@
+.od-text {
+  line-height: 140%;
+}
+
+.od-text_size_xs {
+  font-size: 14px;
+}
+
+.od-text_size_s {
+  font-size: 16px;
+}
+
+.od-text_size_m {
+  font-size: 18px;
+}
+
+.od-text_size_l {
+  font-size: 24px;
+}
+
+.od-text_weight_regular {
+  font-weight: 400;
+}
+
+.od-text_weight_medium {
+  font-weight: 500;
+}
+
+.od-text_weight_bold {
+  font-weight: 700;
+}
