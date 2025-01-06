@@ -1,0 +1,7 @@
+.mw-logo_view_inverse {
+  color: var(--color-text-primary-inverse);
+}
+
+.mw-logo_view_accent {
+  color: var(--color-text-accent);
+}

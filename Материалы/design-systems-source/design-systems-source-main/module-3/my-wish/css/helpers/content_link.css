@@ -1,0 +1,11 @@
+.link-wrapper {
+  display: grid;
+  grid-template-columns: 100px 150px auto;
+  grid-gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.link-wrapper:last-child {
+  margin-bottom: 0;
+}

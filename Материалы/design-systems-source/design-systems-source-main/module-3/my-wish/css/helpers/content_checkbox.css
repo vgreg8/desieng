@@ -1,0 +1,11 @@
+.checkbox__wrapper {
+  display: grid;
+  grid-template-columns: 200px 100px auto;
+  grid-gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.checkbox__wrapper:last-child {
+  margin-bottom: 0;
+}

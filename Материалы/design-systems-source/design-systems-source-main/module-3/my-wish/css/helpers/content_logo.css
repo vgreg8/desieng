@@ -1,0 +1,21 @@
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.logo__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.logo__item_view_inverse {
+  background-color: var(--color-bg-accent);
+}
+
+.logo__item_view_accent {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-secondary);
+}

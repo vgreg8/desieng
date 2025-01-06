@@ -1,0 +1,51 @@
+.mw-text {
+  font-style: normal;
+}
+
+.mw-text_size_xs {
+  font-size: 14px;
+}
+
+.mw-text_size_s {
+  font-size: 18px;
+}
+
+.mw-text_size_m {
+  font-size: 22px;
+}
+
+.mw-text_size_l {
+  font-size: 26px;
+}
+
+.mw-text_size_xl {
+  font-size: 30px;
+}
+
+.mw-text_size_2xl {
+  font-size: 36px;
+}
+
+.mw-text_weight_regular {
+  font-weight: 400;
+}
+
+.mw-text_weight_medium {
+  font-weight: 500;
+}
+
+.mw-text_weight_bold {
+  font-weight: 700;
+}
+
+.mw-text_line-height_s {
+  line-height: 100%;
+}
+
+.mw-text_line-height_m {
+  line-height: 120%;
+}
+
+.mw-text_spacing_m {
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>My Wish — Components</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- компоненты -->
+    <link rel="stylesheet" href="./css/components/mw-grid.css" />
+    <link rel="stylesheet" href="./css/components/mw-icon.css" />
+    <link rel="stylesheet" href="./css/components/mw-logo.css" />
+    <link rel="stylesheet" href="./css/components/mw-button.css" />
+    <link rel="stylesheet" href="./css/components/mw-chips.css" />
+    <link rel="stylesheet" href="./css/components/mw-checkbox.css" />
+    <link rel="stylesheet" href="./css/components/mw-input.css" />
+    <link rel="stylesheet" href="./css/components/mw-link.css" />
+    <link rel="stylesheet" href="./css/components/mw-giftcard.css" />
+    <link rel="stylesheet" href="./css/components/mw-text.css" />
+    <!-- компоненты -->
+
+    <!-- витрина -->
+    <link rel="stylesheet" href="./css/helpers/header.css" />
+    <link rel="stylesheet" href="./css/helpers/content_tokens.css" />
+    <link rel="stylesheet" href="./css/helpers/content_grid.css" />
+    <link rel="stylesheet" href="./css/helpers/content_icons.css" />
+    <link rel="stylesheet" href="./css/helpers/content_logo.css" />
+    <link rel="stylesheet" href="./css/helpers/content_button.css" />
+    <link rel="stylesheet" href="./css/helpers/content_chips.css" />
+    <link rel="stylesheet" href="./css/helpers/content_checkbox.css" />
+    <link rel="stylesheet" href="./css/helpers/content_input.css" />
+    <link rel="stylesheet" href="./css/helpers/content_link.css" />
+    <link rel="stylesheet" href="./css/helpers/content_giftcard.css" />
+    <link rel="stylesheet" href="./css/helpers/content_text.css" />
+    <!-- витрина -->
+
+    <link rel="stylesheet" href="./css/stackoverflow-light.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__left">My&#160;Wish&#160;—&#160;Components</div>
+        <div class="header__rigth">Демо&#160;HTML&#160;Акакдемии</div>
+      </div>
+    </header>
+    <main>
+      <!-- токены -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Токены</div>
+          <div class="row-block__description">токены дизайн-системы</div>
+        </div>
+
+        <div class="mw-grid mw-grid_col_4 mw-grid_col-gap_m">
+          <div class="tokens">
+            <div class="row-block__description">Цвета текста</div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_accent"></div>
+              <div class="token__info">
+                <div class="color-name">Акцентный</div>
+                <div class="color-description">Акцентный</div>
+                <code>--color-text-accent</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_primary"></div>
+              <div class="token__info">
+                <div class="color-name">Основной</div>
+                <div class="color-description">Акцентный</div>
+                <code>--color-text-primary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div
+                class="token__bubble token__bubble_text_primary-inverse"
+              ></div>
+              <div class="token__info">
+                <div class="color-name">Основной в инверсии</div>
+                <div class="color-description">Акцентный</div>
+                <code>--color-text-primary-inverse</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_secondary"></div>
+              <div class="token__info">
+                <div class="color-name">Второстепенный</div>
+                <div class="color-description">Акцентный</div>
+                <code>--color-text-secondary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_success"></div>
+              <div class="token__info">
+                <div class="color-name">Успешного действия</div>
+                <div class="color-description">Акцентный</div>
+                <code>--color-text-success</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_error"></div>
+              <div class="token__info">
+                <div class="color-name">Ошибки</div>
+                <div class="color-description">Акцентный</div>
+                <code>--color-text-error</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="row-block__description">Цвета фонов</div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_accent"></div>
+              <div class="token__info">
+                <div class="color-name">Акцентный</div>
+                <div class="color-description">Точка вниманния</div>
+                <code>--color-bg-accent</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_primary"></div>
+              <div class="token__info">
+                <div class="color-name">Основной</div>
+                <div class="color-description">Основной</div>
+                <code>--color-bg-primary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_secondary"></div>
+              <div class="token__info">
+                <div class="color-name">Второстепенный</div>
+                <div class="color-description">Второстепенный</div>
+                <code>--color-bg-secondary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_warning"></div>
+              <div class="token__info">
+                <div class="color-name">Предупреждение</div>
+                <div class="color-description">Яркий</div>
+                <code>--color-bg-warning</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="row-block__description">Скругления</div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_border-radius_s"></div>
+              <div class="token__info">
+                <div class="color-name">6px</div>
+                <div class="color-description">Акцентный</div>
+                <code>--border-radius-s</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_border-radius_m"></div>
+              <div class="token__info">
+                <div class="color-name">16px</div>
+                <div class="color-description">Акцентный</div>
+                <code>--border-radius-m</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_border-radius_half"></div>
+              <div class="token__info">
+                <div class="color-name">50%</div>
+                <div class="color-description">Акцентный</div>
+                <code>--border-radius-half</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="row-block__description">Отступы</div>
+            <p>
+              на текущем этапе выделенных значений нет, <br />но вы заметите,
+              что они кратны 4.<br />обсудите это с дизайнером
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- токены -->
+
+      <!-- текст -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Текстовые стили</div>
+          <div class="row-block__description">mw-text</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">
+            Текстовый стиль собирается из нескольких классов в зависимости от
+            свойств.
+          </div>
+          <div class="text-wrapper">
+            <div
+              class="mw-text mw-text_size_2xl mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
+            >
+              Заголовок 1
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="mw-text mw-text_size_2xl mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div
+              class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
+            >
+              Заголовок 2
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div
+              class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
+            >
+              Светлый текст на темном фоне
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div
+              class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
+            >
+              Основной текст
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div
+              class="mw-text mw-text_size_xs mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
+            >
+              Подписи
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="mw-text mw-text_size_xs mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- текст -->
+
+      <!-- сетка на проекте -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Сетка</div>
+          <div class="row-block__description">mw-grid</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">
+            Классическая сетка, 4 колонки, гэп 24px
+          </div>
+          <div class="grid-decoration mw-grid mw-grid_col_4 mw-grid_col-gap_m">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <pre><code class="language-html">&lt;div class="mw-grid mw-grid_col_4 mw-grid_col-gap_m"&gt;...&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <!-- сетка на проекте -->
+
+      <!-- иконки -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Иконки</div>
+          <div class="row-block__description">mw-icon</div>
+        </div>
+
+        <div class="icon">
+          <div class="row-block__description">Общий список иконок</div>
+          <div class="icon__preview">
+            <div>
+              <div
+                class="mw-icon mw-icon_name_arrow-down mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">arrow-down</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_arrow-right mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">arrow-right</div>
+            </div>
+
+            <div>
+              <div class="mw-icon mw-icon_name_at mw-icon_view_primary"></div>
+              <div class="icon__description">at</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_chevron-left mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">chevron-left</div>
+            </div>
+
+            <div>
+              <div class="mw-icon mw-icon_name_hand mw-icon_view_primary"></div>
+              <div class="icon__description">hand</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_miracle mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">miracle</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_present mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">present</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_search mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">search</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_share mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">share</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_instagram mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">instagram</div>
+            </div>
+
+            <div>
+              <div class="mw-icon mw-icon_name_vk mw-icon_view_primary"></div>
+              <div class="icon__description">vk</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_facebook mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">facebook</div>
+            </div>
+
+            <div>
+              <div
+                class="mw-icon mw-icon_name_twitter mw-icon_view_primary"
+              ></div>
+              <div class="icon__description">twitter</div>
+            </div>
+          </div>
+          <div class="row-block__description">Визуальный стиль</div>
+          <div class="icon__specs">
+            <div>
+              <div class="icon__wrapper icon__wrapper_bg_default">
+                <div
+                  class="mw-icon mw-icon_name_at mw-icon_view_primary size"
+                ></div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-icon mw-icon_name_at mw-icon_view_primary"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="icon__wrapper icon__wrapper_bg_default">
+                <div
+                  class="mw-icon mw-icon_name_search mw-icon_view_accent"
+                ></div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-icon mw-icon_name_search mw-icon_view_accent"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="icon__wrapper icon__wrapper_bg_accent">
+                <div
+                  class="mw-icon mw-icon_name_at mw-icon_view_primary-inverse"
+                ></div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-icon mw-icon_name_at mw-icon_view_primary-inverse"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- иконки -->
+
+      <!-- логотип -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Логотип</div>
+          <div class="row-block__description"></div>
+        </div>
+
+        <div>
+          <div class="row-block__description">
+            Логотип сервиса можно использовать только белым на акцентном фоне и
+            ацентным на белом.<br />Логотипом считается знак + надпись My Wish,
+            по вопросам пишите в отдел дизайна коммуникаций
+          </div>
+          <div class="logo">
+            <div
+              class="logo__item logo__item_view_inverse mw-logo_view_inverse"
+            >
+              <svg
+                width="115"
+                height="40"
+                viewBox="0 0 115 40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.40782 11.2548L7.33333 11L7.25884 11.2548C6.78671 12.8698 5.57807 14.1661 4 14.75C5.57807 15.3339 6.78671 16.6302 7.25884 18.2452L7.33333 18.5L7.40782 18.2452C7.87996 16.6302 9.08859 15.3339 10.6667 14.75C9.08859 14.1661 7.87996 12.8698 7.40782 11.2548ZM17.9703 13.421L17.3333 11L16.6963 13.421C16.0583 15.8458 14.3204 17.8312 12.0014 18.7846L10.6666 19.3333L12.0014 19.8821C14.3204 20.8354 16.0583 22.8209 16.6963 25.2457L17.3333 27.6667L17.9703 25.2457C18.6083 22.8209 20.3462 20.8354 22.6652 19.8821L24 19.3333L22.6652 18.7846C20.3462 17.8312 18.6083 15.8458 17.9703 13.421ZM10.6667 23.5L10.7412 23.7548C11.2133 25.3698 12.422 26.6661 14 27.25C12.422 27.8339 11.2133 29.1302 10.7412 30.7452L10.6667 31L10.5922 30.7452C10.1201 29.1302 8.91145 27.8339 7.33337 27.25C8.91145 26.6661 10.1201 25.3698 10.5922 23.7548L10.6667 23.5ZM81.611 14.4598C81.7043 14.5531 81.8243 14.5998 81.971 14.5998H84.371C84.5176 14.5998 84.6376 14.5531 84.731 14.4598C84.8243 14.3665 84.871 14.2465 84.871 14.0998V12.2998C84.871 12.1531 84.8243 12.0331 84.731 11.9398C84.6376 11.8465 84.5176 11.7998 84.371 11.7998H81.971C81.8243 11.7998 81.7043 11.8465 81.611 11.9398C81.5176 12.0331 81.471 12.1531 81.471 12.2998V14.0998C81.471 14.2465 81.5176 14.3665 81.611 14.4598ZM81.631 26.3598C81.7243 26.4531 81.8443 26.4998 81.991 26.4998H84.351C84.4976 26.4998 84.6176 26.4531 84.711 26.3598C84.8043 26.2531 84.851 26.1331 84.851 25.9998V16.5998C84.851 16.4531 84.8043 16.3331 84.711 16.2398C84.6176 16.1465 84.4976 16.0998 84.351 16.0998H81.991C81.8443 16.0998 81.7243 16.1465 81.631 16.2398C81.5376 16.3331 81.491 16.4531 81.491 16.5998V25.9998C81.491 26.1465 81.5376 26.2665 81.631 26.3598ZM31.54 26.3598C31.6467 26.4531 31.7667 26.4998 31.9 26.4998H34.3C34.4467 26.4998 34.5667 26.4531 34.66 26.3598C34.7534 26.2531 34.8 26.1331 34.8 25.9998V18.4998L37.06 22.6798C37.14 22.8265 37.2334 22.9398 37.34 23.0198C37.4467 23.0998 37.5867 23.1398 37.76 23.1398H38.8C39.0934 23.1398 39.3267 22.9865 39.5 22.6798L41.74 18.4998V25.9998C41.74 26.1465 41.7867 26.2665 41.88 26.3598C41.9867 26.4531 42.1134 26.4998 42.26 26.4998H44.64C44.7867 26.4998 44.9067 26.4531 45 26.3598C45.1067 26.2665 45.16 26.1465 45.16 25.9998V12.9998C45.16 12.8531 45.1067 12.7331 45 12.6398C44.9067 12.5465 44.7867 12.4998 44.64 12.4998H42.5C42.18 12.4998 41.9467 12.6465 41.8 12.9398L38.28 19.2398L34.76 12.9398C34.6134 12.6465 34.38 12.4998 34.06 12.4998H31.9C31.7667 12.4998 31.6467 12.5465 31.54 12.6398C31.4467 12.7331 31.4 12.8531 31.4 12.9998V25.9998C31.4 26.1331 31.4467 26.2531 31.54 26.3598ZM49.7825 30.1798C49.8625 30.2598 49.9625 30.2998 50.0825 30.2998H52.2825C52.5759 30.2998 52.7759 30.1598 52.8825 29.8798L58.5425 16.7798C58.5825 16.6598 58.6025 16.5731 58.6025 16.5198C58.6025 16.4131 58.5559 16.3198 58.4625 16.2398C58.3825 16.1465 58.2825 16.0998 58.1625 16.0998H55.9225C55.6559 16.0998 55.4559 16.2398 55.3225 16.5198L52.9825 22.3398L50.7025 16.5198C50.5959 16.2398 50.4025 16.0998 50.1225 16.0998H47.8425C47.7225 16.0998 47.6225 16.1465 47.5425 16.2398C47.4625 16.3198 47.4092 16.4198 47.3825 16.5398C47.3825 16.5931 47.4025 16.6731 47.4425 16.7798L51.2825 25.8598L49.7225 29.6198C49.6825 29.6998 49.6625 29.7865 49.6625 29.8798C49.6625 29.9998 49.7025 30.0998 49.7825 30.1798ZM66.9299 26.4998C66.7032 26.4998 66.5232 26.4398 66.3899 26.3198C66.2565 26.1865 66.1765 26.0265 66.1499 25.8398L63.9699 13.0598C63.9565 13.0198 63.9499 12.9731 63.9499 12.9198C63.9499 12.8131 63.9899 12.7198 64.0699 12.6398C64.1632 12.5465 64.2632 12.4998 64.3699 12.4998H66.8499C67.2232 12.4998 67.4299 12.6465 67.4699 12.9398L68.7699 20.7398L70.2099 16.1398C70.3565 15.7798 70.5765 15.5998 70.8699 15.5998H72.3099C72.6432 15.5998 72.8632 15.7798 72.9699 16.1398L74.4099 20.7398L75.7099 12.9398C75.7499 12.6465 75.9565 12.4998 76.3299 12.4998H78.8099C78.9299 12.4998 79.0299 12.5465 79.1099 12.6398C79.2032 12.7198 79.2499 12.8131 79.2499 12.9198L79.2299 13.0598L77.0499 25.8398C77.0232 26.0265 76.9365 26.1865 76.7899 26.3198C76.6565 26.4398 76.4832 26.4998 76.2699 26.4998H74.3699C74.1565 26.4998 73.9899 26.4465 73.8699 26.3398C73.7499 26.2331 73.6632 26.1131 73.6099 25.9798L71.5899 20.2598L69.5699 25.9798C69.4499 26.3265 69.2032 26.4998 68.8299 26.4998H66.9299ZM91.8936 26.6998C90.8136 26.6998 89.907 26.5465 89.1736 26.2398C88.4536 25.9331 87.9203 25.5665 87.5736 25.1398C87.227 24.7131 87.0536 24.3331 87.0536 23.9998C87.0536 23.8665 87.1003 23.7598 87.1936 23.6798C87.3003 23.5865 87.4136 23.5398 87.5336 23.5398H89.8136C89.8936 23.5398 89.9669 23.5731 90.0336 23.6398C90.1936 23.7465 90.3136 23.8331 90.3936 23.8998C90.687 24.1131 90.9403 24.2731 91.1536 24.3798C91.3803 24.4731 91.6536 24.5198 91.9736 24.5198C92.3603 24.5198 92.6736 24.4465 92.9136 24.2998C93.1669 24.1398 93.2936 23.9198 93.2936 23.6398C93.2936 23.4131 93.227 23.2331 93.0936 23.0998C92.9736 22.9665 92.7336 22.8398 92.3736 22.7198C92.0136 22.5865 91.4669 22.4465 90.7336 22.2998C89.6269 22.0731 88.7736 21.7065 88.1736 21.1998C87.587 20.6798 87.2936 19.9865 87.2936 19.1198C87.2936 18.5731 87.4669 18.0531 87.8136 17.5598C88.1603 17.0665 88.6736 16.6665 89.3536 16.3598C90.047 16.0531 90.867 15.8998 91.8136 15.8998C92.7603 15.8998 93.587 16.0465 94.2936 16.3398C95.0003 16.6331 95.5336 16.9931 95.8936 17.4198C96.267 17.8331 96.4536 18.2131 96.4536 18.5598C96.4536 18.6798 96.4069 18.7865 96.3136 18.8798C96.2336 18.9731 96.1336 19.0198 96.0136 19.0198H93.9336C93.827 19.0198 93.727 18.9865 93.6336 18.9198C93.4603 18.8265 93.307 18.7265 93.1736 18.6198C92.947 18.4465 92.7336 18.3131 92.5336 18.2198C92.3336 18.1265 92.087 18.0798 91.7936 18.0798C91.447 18.0798 91.167 18.1598 90.9536 18.3198C90.7536 18.4798 90.6536 18.6865 90.6536 18.9398C90.6536 19.1398 90.7069 19.3065 90.8136 19.4398C90.9336 19.5731 91.1736 19.7065 91.5336 19.8398C91.907 19.9598 92.4536 20.0865 93.1736 20.2198C94.4669 20.4465 95.4069 20.8465 95.9936 21.4198C96.5936 21.9931 96.8936 22.6665 96.8936 23.4398C96.8936 24.4265 96.4536 25.2198 95.5736 25.8198C94.6936 26.4065 93.4669 26.6998 91.8936 26.6998ZM99.2083 26.3598C99.315 26.4531 99.435 26.4998 99.5683 26.4998H102.128C102.275 26.4998 102.395 26.4531 102.488 26.3598C102.582 26.2665 102.628 26.1465 102.628 25.9998V20.5398C102.628 19.9131 102.788 19.4331 103.108 19.0998C103.442 18.7531 103.895 18.5798 104.468 18.5798C105.042 18.5798 105.475 18.7531 105.768 19.0998C106.075 19.4331 106.228 19.9131 106.228 20.5398V25.9998C106.228 26.1331 106.275 26.2531 106.368 26.3598C106.475 26.4531 106.595 26.4998 106.728 26.4998H109.308C109.455 26.4998 109.575 26.4531 109.668 26.3598C109.762 26.2531 109.808 26.1331 109.808 25.9998V20.4198C109.808 19.4598 109.635 18.6398 109.288 17.9598C108.942 17.2798 108.462 16.7665 107.848 16.4198C107.248 16.0731 106.562 15.8998 105.788 15.8998C104.482 15.8998 103.428 16.3531 102.628 17.2598V12.7998C102.628 12.6531 102.582 12.5331 102.488 12.4398C102.395 12.3465 102.275 12.2998 102.128 12.2998H99.5683C99.435 12.2998 99.315 12.3465 99.2083 12.4398C99.115 12.5331 99.0683 12.6531 99.0683 12.7998V25.9998C99.0683 26.1331 99.115 26.2531 99.2083 26.3598Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="logo__item logo__item_view_accent mw-logo_view_accent">
+              <svg
+                width="115"
+                height="40"
+                viewBox="0 0 115 40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.40782 11.2548L7.33333 11L7.25884 11.2548C6.78671 12.8698 5.57807 14.1661 4 14.75C5.57807 15.3339 6.78671 16.6302 7.25884 18.2452L7.33333 18.5L7.40782 18.2452C7.87996 16.6302 9.08859 15.3339 10.6667 14.75C9.08859 14.1661 7.87996 12.8698 7.40782 11.2548ZM17.9703 13.421L17.3333 11L16.6963 13.421C16.0583 15.8458 14.3204 17.8312 12.0014 18.7846L10.6666 19.3333L12.0014 19.8821C14.3204 20.8354 16.0583 22.8209 16.6963 25.2457L17.3333 27.6667L17.9703 25.2457C18.6083 22.8209 20.3462 20.8354 22.6652 19.8821L24 19.3333L22.6652 18.7846C20.3462 17.8312 18.6083 15.8458 17.9703 13.421ZM10.6667 23.5L10.7412 23.7548C11.2133 25.3698 12.422 26.6661 14 27.25C12.422 27.8339 11.2133 29.1302 10.7412 30.7452L10.6667 31L10.5922 30.7452C10.1201 29.1302 8.91145 27.8339 7.33337 27.25C8.91145 26.6661 10.1201 25.3698 10.5922 23.7548L10.6667 23.5ZM81.611 14.4598C81.7043 14.5531 81.8243 14.5998 81.971 14.5998H84.371C84.5176 14.5998 84.6376 14.5531 84.731 14.4598C84.8243 14.3665 84.871 14.2465 84.871 14.0998V12.2998C84.871 12.1531 84.8243 12.0331 84.731 11.9398C84.6376 11.8465 84.5176 11.7998 84.371 11.7998H81.971C81.8243 11.7998 81.7043 11.8465 81.611 11.9398C81.5176 12.0331 81.471 12.1531 81.471 12.2998V14.0998C81.471 14.2465 81.5176 14.3665 81.611 14.4598ZM81.631 26.3598C81.7243 26.4531 81.8443 26.4998 81.991 26.4998H84.351C84.4976 26.4998 84.6176 26.4531 84.711 26.3598C84.8043 26.2531 84.851 26.1331 84.851 25.9998V16.5998C84.851 16.4531 84.8043 16.3331 84.711 16.2398C84.6176 16.1465 84.4976 16.0998 84.351 16.0998H81.991C81.8443 16.0998 81.7243 16.1465 81.631 16.2398C81.5376 16.3331 81.491 16.4531 81.491 16.5998V25.9998C81.491 26.1465 81.5376 26.2665 81.631 26.3598ZM31.54 26.3598C31.6467 26.4531 31.7667 26.4998 31.9 26.4998H34.3C34.4467 26.4998 34.5667 26.4531 34.66 26.3598C34.7534 26.2531 34.8 26.1331 34.8 25.9998V18.4998L37.06 22.6798C37.14 22.8265 37.2334 22.9398 37.34 23.0198C37.4467 23.0998 37.5867 23.1398 37.76 23.1398H38.8C39.0934 23.1398 39.3267 22.9865 39.5 22.6798L41.74 18.4998V25.9998C41.74 26.1465 41.7867 26.2665 41.88 26.3598C41.9867 26.4531 42.1134 26.4998 42.26 26.4998H44.64C44.7867 26.4998 44.9067 26.4531 45 26.3598C45.1067 26.2665 45.16 26.1465 45.16 25.9998V12.9998C45.16 12.8531 45.1067 12.7331 45 12.6398C44.9067 12.5465 44.7867 12.4998 44.64 12.4998H42.5C42.18 12.4998 41.9467 12.6465 41.8 12.9398L38.28 19.2398L34.76 12.9398C34.6134 12.6465 34.38 12.4998 34.06 12.4998H31.9C31.7667 12.4998 31.6467 12.5465 31.54 12.6398C31.4467 12.7331 31.4 12.8531 31.4 12.9998V25.9998C31.4 26.1331 31.4467 26.2531 31.54 26.3598ZM49.7825 30.1798C49.8625 30.2598 49.9625 30.2998 50.0825 30.2998H52.2825C52.5759 30.2998 52.7759 30.1598 52.8825 29.8798L58.5425 16.7798C58.5825 16.6598 58.6025 16.5731 58.6025 16.5198C58.6025 16.4131 58.5559 16.3198 58.4625 16.2398C58.3825 16.1465 58.2825 16.0998 58.1625 16.0998H55.9225C55.6559 16.0998 55.4559 16.2398 55.3225 16.5198L52.9825 22.3398L50.7025 16.5198C50.5959 16.2398 50.4025 16.0998 50.1225 16.0998H47.8425C47.7225 16.0998 47.6225 16.1465 47.5425 16.2398C47.4625 16.3198 47.4092 16.4198 47.3825 16.5398C47.3825 16.5931 47.4025 16.6731 47.4425 16.7798L51.2825 25.8598L49.7225 29.6198C49.6825 29.6998 49.6625 29.7865 49.6625 29.8798C49.6625 29.9998 49.7025 30.0998 49.7825 30.1798ZM66.9299 26.4998C66.7032 26.4998 66.5232 26.4398 66.3899 26.3198C66.2565 26.1865 66.1765 26.0265 66.1499 25.8398L63.9699 13.0598C63.9565 13.0198 63.9499 12.9731 63.9499 12.9198C63.9499 12.8131 63.9899 12.7198 64.0699 12.6398C64.1632 12.5465 64.2632 12.4998 64.3699 12.4998H66.8499C67.2232 12.4998 67.4299 12.6465 67.4699 12.9398L68.7699 20.7398L70.2099 16.1398C70.3565 15.7798 70.5765 15.5998 70.8699 15.5998H72.3099C72.6432 15.5998 72.8632 15.7798 72.9699 16.1398L74.4099 20.7398L75.7099 12.9398C75.7499 12.6465 75.9565 12.4998 76.3299 12.4998H78.8099C78.9299 12.4998 79.0299 12.5465 79.1099 12.6398C79.2032 12.7198 79.2499 12.8131 79.2499 12.9198L79.2299 13.0598L77.0499 25.8398C77.0232 26.0265 76.9365 26.1865 76.7899 26.3198C76.6565 26.4398 76.4832 26.4998 76.2699 26.4998H74.3699C74.1565 26.4998 73.9899 26.4465 73.8699 26.3398C73.7499 26.2331 73.6632 26.1131 73.6099 25.9798L71.5899 20.2598L69.5699 25.9798C69.4499 26.3265 69.2032 26.4998 68.8299 26.4998H66.9299ZM91.8936 26.6998C90.8136 26.6998 89.907 26.5465 89.1736 26.2398C88.4536 25.9331 87.9203 25.5665 87.5736 25.1398C87.227 24.7131 87.0536 24.3331 87.0536 23.9998C87.0536 23.8665 87.1003 23.7598 87.1936 23.6798C87.3003 23.5865 87.4136 23.5398 87.5336 23.5398H89.8136C89.8936 23.5398 89.9669 23.5731 90.0336 23.6398C90.1936 23.7465 90.3136 23.8331 90.3936 23.8998C90.687 24.1131 90.9403 24.2731 91.1536 24.3798C91.3803 24.4731 91.6536 24.5198 91.9736 24.5198C92.3603 24.5198 92.6736 24.4465 92.9136 24.2998C93.1669 24.1398 93.2936 23.9198 93.2936 23.6398C93.2936 23.4131 93.227 23.2331 93.0936 23.0998C92.9736 22.9665 92.7336 22.8398 92.3736 22.7198C92.0136 22.5865 91.4669 22.4465 90.7336 22.2998C89.6269 22.0731 88.7736 21.7065 88.1736 21.1998C87.587 20.6798 87.2936 19.9865 87.2936 19.1198C87.2936 18.5731 87.4669 18.0531 87.8136 17.5598C88.1603 17.0665 88.6736 16.6665 89.3536 16.3598C90.047 16.0531 90.867 15.8998 91.8136 15.8998C92.7603 15.8998 93.587 16.0465 94.2936 16.3398C95.0003 16.6331 95.5336 16.9931 95.8936 17.4198C96.267 17.8331 96.4536 18.2131 96.4536 18.5598C96.4536 18.6798 96.4069 18.7865 96.3136 18.8798C96.2336 18.9731 96.1336 19.0198 96.0136 19.0198H93.9336C93.827 19.0198 93.727 18.9865 93.6336 18.9198C93.4603 18.8265 93.307 18.7265 93.1736 18.6198C92.947 18.4465 92.7336 18.3131 92.5336 18.2198C92.3336 18.1265 92.087 18.0798 91.7936 18.0798C91.447 18.0798 91.167 18.1598 90.9536 18.3198C90.7536 18.4798 90.6536 18.6865 90.6536 18.9398C90.6536 19.1398 90.7069 19.3065 90.8136 19.4398C90.9336 19.5731 91.1736 19.7065 91.5336 19.8398C91.907 19.9598 92.4536 20.0865 93.1736 20.2198C94.4669 20.4465 95.4069 20.8465 95.9936 21.4198C96.5936 21.9931 96.8936 22.6665 96.8936 23.4398C96.8936 24.4265 96.4536 25.2198 95.5736 25.8198C94.6936 26.4065 93.4669 26.6998 91.8936 26.6998ZM99.2083 26.3598C99.315 26.4531 99.435 26.4998 99.5683 26.4998H102.128C102.275 26.4998 102.395 26.4531 102.488 26.3598C102.582 26.2665 102.628 26.1465 102.628 25.9998V20.5398C102.628 19.9131 102.788 19.4331 103.108 19.0998C103.442 18.7531 103.895 18.5798 104.468 18.5798C105.042 18.5798 105.475 18.7531 105.768 19.0998C106.075 19.4331 106.228 19.9131 106.228 20.5398V25.9998C106.228 26.1331 106.275 26.2531 106.368 26.3598C106.475 26.4531 106.595 26.4998 106.728 26.4998H109.308C109.455 26.4998 109.575 26.4531 109.668 26.3598C109.762 26.2531 109.808 26.1331 109.808 25.9998V20.4198C109.808 19.4598 109.635 18.6398 109.288 17.9598C108.942 17.2798 108.462 16.7665 107.848 16.4198C107.248 16.0731 106.562 15.8998 105.788 15.8998C104.482 15.8998 103.428 16.3531 102.628 17.2598V12.7998C102.628 12.6531 102.582 12.5331 102.488 12.4398C102.395 12.3465 102.275 12.2998 102.128 12.2998H99.5683C99.435 12.2998 99.315 12.3465 99.2083 12.4398C99.115 12.5331 99.0683 12.6531 99.0683 12.7998V25.9998C99.0683 26.1331 99.115 26.2531 99.2083 26.3598Z"
+                  fill="#7D00FB"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- логотип -->
+
+      <!-- кнопка -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Кнопка</div>
+          <div class="row-block__description">mw-button</div>
+        </div>
+
+        <div class="btn">
+          <div class="row-block__description">
+            Кнопка. Используется, когда человеку нужно сделать выбор,
+            подтвердить или совершить какое-то действие. Например, отправить
+            сообщение, оплатить заказ, сохранить изменения, войти в акканут.
+          </div>
+          <div class="btn__toolbar">
+            <label
+              >Размер (size)
+              <select
+                id="button_size"
+                onchange="getActiveSelectOption('button_size')"
+              >
+                <option value="m" selected="true">M</option>
+                <option value="s">S</option>
+              </select></label
+            >
+            <label
+              >Внешний вид (view)
+              <select
+                id="button_view"
+                onchange="getActiveSelectOption('button_view')"
+              >
+                <option value="primary" selected="true">primary</option>
+                <option value="bordered">bordered</option>
+                <option value="secondary">secondary</option>
+              </select></label
+            >
+            <label
+              >Иконка (has-icon)
+              <select
+                id="button_has-icon"
+                onchange="getActiveSelectOption('button_has-icon')"
+              >
+                <option value="no-icon" selected="true">no icon</option>
+                <option value="icon-left">icon left</option>
+                <option value="iсon-right">icon right</option>
+                <option value="only-icon">only icon</option>
+              </select></label
+            >
+          </div>
+          <div class="btn__preview">
+            <button
+              id="preview-button"
+              class="mw-button mw-button_size_m mw-button_view_primary mw-button_has-icon_no-icon"
+            >
+              <div
+                class="mw-icon mw-icon_name_present mw-icon_view_primary-inverse"
+              ></div>
+              <span
+                class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
+                >Кнопка</span
+              >
+            </button>
+          </div>
+          <div>
+            <pre><code id="button_code" class="language-html">&lt;button class="mw-button mw-button_size_m mw-button_view_primary mw-button_has-icon_no-icon"&gt;...&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- кнопка -->
+
+      <!-- чипс -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Чипс</div>
+          <div class="row-block__description">mw-chips</div>
+        </div>
+
+        <div class="chips">
+          <div class="row-block__description">
+            Выполняет фильтрацию контента, работает по принципу радиокнопки. В
+            интерфейсе обычно используется в количестве 2+
+          </div>
+          <div>
+            <div class="chips__wrapper">
+              <div class="mw-chips mw-chips_size_m">
+                <input
+                  type="radio"
+                  id="radio-all"
+                  name="radio-categories"
+                  value="all"
+                  checked
+                />
+                <label
+                  for="radio-all"
+                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
+                  >Все</label
+                >
+                <input
+                  type="radio"
+                  id="radio-sport"
+                  name="radio-categories"
+                  value="sport"
+                />
+                <label
+                  for="radio-sport"
+                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
+                  >Спорт</label
+                >
+                <input
+                  type="radio"
+                  id="radio-books"
+                  name="radio-categories"
+                  value="books"
+                />
+                <label
+                  for="radio-books"
+                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium"
+                  >Книги</label
+                >
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-chips mw-chips_size_m"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- чипс -->
+
+      <!-- чекбокс -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Чекбокс</div>
+          <div class="row-block__description">mw-checkbox</div>
+        </div>
+
+        <div class="checkbox">
+          <div class="row-block__description">
+            Чекбокс — элемент с двумя состояниями: выбран и не выбран.
+            Используйте чекбокс, если хотите, чтобы пользователь сделал выбор.
+          </div>
+          <div>
+            <div class="checkbox__wrapper">
+              <label class="mw-checkbox">
+                <input type="checkbox" value="value" />
+                <span
+                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular"
+                  >Выбрать</span
+                >
+              </label>
+              <div>Активный</div>
+              <pre><code class="language-html">&lt;label class="mw-checkbox"&gt;...&lt;/label&gt;</code></pre>
+            </div>
+            <div class="checkbox__wrapper">
+              <label class="mw-checkbox mw-checkbox_is-disabled_true">
+                <input type="checkbox" value="value" disabled />
+                <span
+                  class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular"
+                  >Выбрать</span
+                >
+              </label>
+              <div>Неактивный</div>
+              <pre><code class="language-html">&lt;label class="mw-checkbox"&gt;...&lt;/label&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- чекбокс -->
+
+      <!-- поле ввода -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Поле ввода</div>
+          <div class="row-block__description">mw-input</div>
+        </div>
+
+        <div class="input">
+          <div class="row-block__description">
+            Поле для ввода текста в одну строку
+          </div>
+
+          <div class="input__toolbar">
+            <label
+              >Состояние (state)
+              <select
+                id="input_state"
+                onchange="getInputActiveSelectOption('input_state')"
+              >
+                <option value="default" selected="true">default</option>
+                <option value="error">error</option>
+              </select></label
+            >
+            <label
+              >Иконка (has-icon)
+              <select
+                id="input_has-icon"
+                onchange="getInputActiveSelectOption('input_has-icon')"
+              >
+                <option value="no-icon" selected="true">no icon</option>
+                <option value="icon-left">icon left</option>
+                <option value="iсon-right">icon right</option>
+              </select></label
+            >
+          </div>
+
+          <div class="input__preview">
+            <div class="mw-input">
+              <input
+                class="mw-input__input mw-input_has-icon_none"
+                placeholder="Введите текст"
+                type="text"
+                name="name"
+                id="preview-input"
+              />
+              <p
+                class="mw-input__message mw-text_size_xs mw-text_line-height_s mw-text_weight_regular"
+              >
+                Укажите город.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <pre><code id="input_code" class="language-html">&lt;div class="mw-input"&gt;...&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- поле ввода -->
+
+      <!-- ссылка -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Ссылка</div>
+          <div class="row-block__description">mw-link</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">Классическая ссылка</div>
+          <div class="link-wrapper">
+            <a href="./" class="mw-link mw-link_type_simple">ссылка</a>
+            <p>простая</p>
+            <div>
+              <pre><code class="language-html">&lt;a class="mw-link mw-link_type_simple"&gt;...&lt;/a &gt;</code></pre>
+            </div>
+          </div>
+          <div class="link-wrapper">
+            <a href="./" class="mw-link mw-link_type_direction-back">
+              <svg
+                width="12"
+                height="24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.6402 5.2318c.4243.3536.4816.9841.128 1.4084L3.3017 12l4.4665 5.3598c.3536.4243.2963 1.0549-.128 1.4084-.4243.3536-1.0549.2963-1.4084-.128l-5-6a1 1 0 0 1 0-1.2804l5-6c.3535-.4242.9841-.4816 1.4084-.128Z"
+                  fill="#7D00FB"
+                />
+              </svg>
+              ссылка
+            </a>
+            <p>c направлением</p>
+            <div>
+              <pre><code class="language-html">&lt;a class="mw-link mw-link_type_directionBack"&gt;...&lt;/a&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ссылка -->
+
+      <!-- карточка подарка -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Карточка подарка</div>
+          <div class="row-block__description">mw-giftcard</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">
+            Карточка подарка. На проекте рекомендуется использовать в связке с
+            mw-grid
+          </div>
+          <div class="giftcard-preview">
+            <div>
+              <div class="mw-giftcard mw-giftcard_status_clear">
+                <div class="mw-giftcard__image">
+                  <img
+                    src="./img/gift-image.png"
+                    srcset="./img/gift-image.png 2x"
+                    alt="gift image"
+                  />
+                </div>
+                <div
+                  class="mw-giftcard__heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
+                >
+                  MIZU бутылка для воды металлическая
+                </div>
+                <div
+                  class="mw-giftcard__subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
+                >
+                  Спорт
+                </div>
+                <div class="mw-giftcard__badge">
+                  <div
+                    class="mw-giftcard__badge-image mw-icon mw-icon_name_miracle mw-icon_view_primary-inverse"
+                  ></div>
+                  <div
+                    class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
+                  ></div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-giftcard mw-giftcard_status_clear"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="mw-giftcard mw-giftcard_status_is-giving">
+                <div class="mw-giftcard__image">
+                  <img
+                    src="./img/gift-image-2.png"
+                    srcset="./img/gift-image-2@2x.png 2x"
+                    alt="gift image"
+                  />
+                </div>
+                <div
+                  class="mw-giftcard__heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
+                >
+                  4K UHD Smart LED проек...
+                </div>
+                <div
+                  class="mw-giftcard__subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
+                >
+                  Техника
+                </div>
+                <div class="mw-giftcard__badge">
+                  <div
+                    class="mw-giftcard__badge-image mw-icon mw-icon_name_miracle mw-icon_view_primary-inverse"
+                  ></div>
+                  <div
+                    class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
+                  >
+                    Уже дарят
+                  </div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-giftcard mw-giftcard_status_is-giving"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="mw-giftcard mw-giftcard_status_you-giving">
+                <div class="mw-giftcard__image">
+                  <img
+                    src="./img/gift-image-3.png"
+                    srcset="./img/gift-image-3@2x.png 2x"
+                    alt="gift image"
+                  />
+                </div>
+                <div
+                  class="mw-giftcard__heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
+                >
+                  Мультипекарь REDMOND
+                </div>
+                <div
+                  class="mw-giftcard__subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
+                >
+                  Техника
+                </div>
+                <div class="mw-giftcard__badge">
+                  <div
+                    class="mw-giftcard__badge-image mw-icon mw-icon_name_hand mw-icon_view_primary-inverse"
+                  ></div>
+                  <div
+                    class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
+                  >
+                    Вы дарите
+                  </div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-giftcard mw-giftcard_status_you-giving"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="mw-giftcard mw-giftcard_status_already-given">
+                <div class="mw-giftcard__image">
+                  <img
+                    src="./img/gift-image-4.png"
+                    srcset="./img/gift-image-4@2x.png 2x"
+                    alt="gift image"
+                  />
+                </div>
+                <div
+                  class="mw-giftcard__heading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_bold mw-text_spacing_m"
+                >
+                  Монстера
+                </div>
+                <div
+                  class="mw-giftcard__subheading mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_regular mw-text_spacing_m"
+                >
+                  Дом и уют
+                </div>
+                <div class="mw-giftcard__badge">
+                  <div
+                    class="mw-giftcard__badge-image mw-icon mw-icon_name_present mw-icon_view_primary-inverse"
+                  ></div>
+                  <div
+                    class="mw-text mw-text_size_s mw-text_line-height_m mw-text_weight_medium mw-text_spacing_m"
+                  >
+                    Подарили
+                  </div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="mw-giftcard mw-giftcard_status_already-given"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- карточка подарка -->
+    </main>
+    <script src="./js/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="./js/helpers/content-button.js"></script>
+    <script src="./js/helpers/content-input.js"></script>
+  </body>
+</html>
