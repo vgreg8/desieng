@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <title>ch004.xhtml</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" type="text/css" href="../styles/stylesheet1.css" />
+</head>
+<body epub:type="bodymatter">
+<section id="расширение-дизайн-системы" class="level1" data-number="4">
+<h1 data-number="4">4. Расширение дизайн-системы</h1>
+<div class="text-container text-container--module">
+<p>Научимся работать с изменениями в макетах</p>
+</div>
+<section id="как-происходит-расширение" class="level2" data-number="4.1">
+<h2 data-number="4.1">4.1. Как происходит расширение?</h2>
+<div class="text-container text-container--module">
+<p>Расширение и улучшение любой работающей системы (в том числе дизайн-систем) — естественное и органичное явление. Если улучшений не происходит, значит, заглох продукт или дизайн-систему закрыли как проект.</p>
+<p>Предложение расширить дизайн-систему может появиться на любом этапе продуктового процесса. Улучшение может быть предложено бизнес-аналитиком на этапе исследования, продуктовым менеджером, UX-исследователем, продуктовыми дизайнерами, коллегами-разработчиками или даже пользователями продукта. Предложения часто поступают в устном формате: «А давайте вот эту штуку переиспользуем тут и тут». Откуда бы ни пришло такое предложение, обсудите его как можно раньше в команде вместе с автором. Поскольку от продуктовых команд ожидают интенсивной работы, между участниками может быть некоторое отставание в видении картины. Очная встреча поможет быстро расставить все точки над i, а также перевести предложение с языка «а давайте добавим» в чёткую задачу, понятную команде.</p>
+<p>Действовать всегда нужно по ситуации с оглядкой на ресурсы, идеологию и планы продукта. Главное, помните про коммуникацию: все решения лучше обсуждать с командой, собирая максимальное количество точек зрения.</p>
+<p>На базовом уровне коммуникацию можно выстроить на принципах <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B9%D0%B4%D0%B7%D0%B5%D0%BD">Кайдзена</a>. Кайдзен — японская практика рационального ведения чего угодно (бизнеса, проекта, лошадиной фермы), основанная на непрерывном улучшении процессов и навыков исполнителей. Вот несколько принципов, которые отлично ложатся на работу по созданию и расширению дизайн-систем с участием специалистов разного плана:</p>
+<ul>
+<li>непрерывные изменения,</li>
+<li>открытое признание проблем и открытое общение в целом,</li>
+<li>горизонтальный обмен опытом,</li>
+<li>постоянное информирование,</li>
+<li>стандартизация процессов.</li>
+</ul>
+<p>Ресурс для ремесла разработчика — макет и спецификация от дизайнера. Никогда не начинайте работу над компонентами без них, иначе на уточнение вопросов будет потрачено много времени. Плюс к этому вы будете выдёргивать дизайнера из контекста его работы, что ни ему, ни вам не понравится. Ему — потому что нужно переключаться между задачами. Вам — потому что человек не всегда может быстро ответить на ваш вопрос. Конечно, бывают форс-мажоры, но не стоит превращать их в правило.</p>
+<blockquote>
+<p>Хорошая практика — заранее договориться с дизайн-командой о формате передачи макетов разработчикам.</p>
+</blockquote>
+<p>Перед работой внимательно проведите ревью макетов и убедитесь, что не осталось белых пятен. А если все понятно, то можно смело действовать.</p>
+</div>
+</section>
+<section id="пройдёмся-по-новым-макетам" class="level2" data-number="4.2">
+<h2 data-number="4.2">4.2. Пройдёмся по новым макетам</h2>
+<div class="text-container text-container--module">
+<section id="первый-макет-ваши-вишлисты" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1">Первый макет (Ваши вишлисты)</h3>
+<p>Появился новый элемент навигации — табы, нужно заводить новый компонент. Табы — распространённый интерфейсный элемент, вы видите его в продукте точно не в последний раз.</p>
+<figure>
+<img src="../media/file134.png" alt="Табы" />
+<figcaption aria-hidden="true">Табы</figcaption>
+</figure>
+<p>Список вишлистов: повторяющиеся элементы с группой изображений и текста. Выделим в отдельный компонент, так как самих вишлистов у пользователя может быть много. Для организации вишлистов на странице подойдёт уже готовый <code>mw-grid</code>, поэтому никакие дополнительные обвязки не понадобятся.</p>
+<figure>
+<img src="../media/file135.png" alt="Список вишлистов" />
+<figcaption aria-hidden="true">Список вишлистов</figcaption>
+</figure>
+<p>Шапка, подвал и кнопка в центре не поменялись.</p>
+</section>
+<section id="второй-макет-вы-обещали-подарить" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2">Второй макет (Вы обещали подарить)</h3>
+<p>Также присутствуют табы.</p>
+<p>Обновились карточки подарка. Нужно посмотреть, как совместить новые карточки с уже существующими.</p>
+<figure>
+<img src="../media/file136.png" alt="Карточки подарков" />
+<figcaption aria-hidden="true">Карточки подарков</figcaption>
+</figure>
+<p>Под карточками новый баннер. Его нужно выделить в отдельный компонент, потому что разные варианты баннеров могут появляться в других местах продукта в зависимости от бизнес-задач.</p>
+<figure>
+<img src="../media/file137.png" alt="Баннер" />
+<figcaption aria-hidden="true">Баннер</figcaption>
+</figure>
+</section>
+</div>
+</section>
+<section id="табы-и-карточка-вишлиста" class="level2" data-number="4.3">
+<h2 data-number="4.3">4.3. Табы и карточка вишлиста</h2>
+<div class="text-container text-container--module">
+<p>Для старта работ у нас есть:</p>
+<ul>
+<li>три новых компонента,</li>
+<li>модификация одного существующего.</li>
+</ul>
+<section id="табы" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1">Табы</h3>
+<figure>
+<img src="../media/file138.png" alt="Новые табы" />
+<figcaption aria-hidden="true">Новые табы</figcaption>
+</figure>
+<p>Назовём <code>mw-tabs</code>.</p>
+<p>Табы имеют логику выбора одного значения из множества. По такому же принципу работает группа радиокнопок. В первой реализации дизайн-системы My Wish мы сделали похожий элемент — <code>Chips</code>. Можно взять его за основу и заменить стили.</p>
+<p>Будет логично спросить, почему бы при одинаковой логике работы не объединить Tabs и Сhips в один компонент (на вёрстке будет блок) и не повесить на него два модификатора на внешний вид. Условно, <code>mw-radio-group_type_tabs</code> и <code>mw-radio-group_type_chips</code>?</p>
+<p>Конечно, объединение возможно и логически, и технически. Это не будет ошибкой. Но на длинной дистанции у Chips может появиться вариация, когда он работает как группа чекбоксов, а у Tabs слева от текста могут появиться иконки или добавиться выравнивание в контейнере по левому краю.</p>
+<p>Игнорировать или сопротивляться таким изменениям бессмысленно, а вот поддержка нового <code>mw-radio-group</code> сильно усложнится. Через некоторое время компонент «раздуется» и будет требовать больше внимания разработчиков. По этой причине мы оставили компоненты раздельными.</p>
+<p>В новых макетах табы в единственном экземпляре, дополнительные модификации не нужны.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-tabs&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-tabs__center-wrapper&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;input</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ot">      type=</span><span class="st">&quot;radio&quot;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ot">      class=</span><span class="st">&quot;mw-tabs__tab&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ot">      name=</span><span class="st">&quot;mw-tabs&quot;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ot">      value=</span><span class="st">&quot;1&quot;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ot">      id=</span><span class="st">&quot;tab1&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ot">      checked</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">/&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;label</span> <span class="er">for</span><span class="ot">=</span><span class="st">&quot;tab1&quot;</span><span class="kw">&gt;</span>Ваши вишлисты<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;input</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ot">      type=</span><span class="st">&quot;radio&quot;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ot">      class=</span><span class="st">&quot;mw-tabs__tab&quot;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ot">      name=</span><span class="st">&quot;mw-tabs&quot;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ot">      value=</span><span class="st">&quot;2&quot;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ot">      id=</span><span class="st">&quot;tab2&quot;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">/&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;label</span> <span class="er">for</span><span class="ot">=</span><span class="st">&quot;tab2&quot;</span><span class="kw">&gt;</span>Вы обещали подарить<span class="kw">&lt;/label&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-tabs__underline&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-tabs</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-tabs__center-wrapper</span> {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: fit-content<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">0</span> <span class="bu">auto</span><span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">56</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-tabs__underline</span> {</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">1</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.25</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>input<span class="fu">.mw-tabs__tab</span> {</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">opacity</span>: <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">position</span>: <span class="dv">fixed</span><span class="op">;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>input<span class="fu">.mw-tabs__tab</span> <span class="op">+</span> label {</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">float</span>: <span class="dv">left</span><span class="op">;</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#ffffff</span><span class="op">;</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-weight</span>: <span class="dv">normal</span><span class="op">;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">18</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span>: <span class="dv">21</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>input<span class="fu">.mw-tabs__tab</span><span class="in">:checked</span> <span class="op">+</span> label {</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-accent</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="kw">box-shadow</span>: <span class="dv">0</span> <span class="dv">4</span><span class="dt">px</span> <span class="dv">0</span> <span class="dv">-1</span><span class="dt">px</span> <span class="fu">var(</span><span class="va">--color-text-accent</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="fu">var(</span><span class="va">--color-bg-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/my-wish/css/components/mw-tabs.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+<section id="карточка-вишлиста" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2">Карточка вишлиста</h3>
+<figure>
+<img src="../media/file139.png" alt="Новая карточка вишлиста" />
+<figcaption aria-hidden="true">Новая карточка вишлиста</figcaption>
+</figure>
+<p>Назовём <code>mw-wishlist-preview</code>.</p>
+<p>Картинки в нём можно организовать как на Flexbox, так и на CSS Grid. В решении предыдущего модуля мы писали, что для контента удобнее использовать Flexbox, ошибкой не будет. Но дело в том, что все картинки в компоненте лежат в одинаковых контейнерах и никак не влияют на ширину блока, поэтому в решении остановились на CSS Grid.</p>
+<p>Все карточки вишлистов одинаковые, уникальных модификаций нет, поэтому просто реализуем блок <code>mw-wishlist-preview</code> c двумя элементами блока: для группы изображений <code>mw-wishlist-preview__images</code> и для названия <code>mw-wishlist-preview__name</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-wishlist-preview&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-wishlist-preview__images&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ot">      src=</span><span class="st">&quot;./img/wishlist-preview-img-01.png&quot;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ot">      srcset=</span><span class="st">&quot;./img/wishlist-preview-img-01@2x.png 2x&quot;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ot">      alt=</span><span class="st">&quot;wishlist preview image&quot;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">/&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ot">      src=</span><span class="st">&quot;./img/wishlist-preview-img-02.png&quot;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ot">      srcset=</span><span class="st">&quot;./img/wishlist-preview-img-02@2x.png 2x&quot;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ot">      alt=</span><span class="st">&quot;wishlist preview image&quot;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ot">      class=</span><span class="st">&quot;mw-wishlist-preview__image&quot;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">/&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ot">      src=</span><span class="st">&quot;./img/wishlist-preview-img-03.png&quot;</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ot">      srcset=</span><span class="st">&quot;./img/wishlist-preview-img-03@2x.png 2x&quot;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ot">      alt=</span><span class="st">&quot;wishlist preview image&quot;</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ot">      class=</span><span class="st">&quot;mw-wishlist-preview__image&quot;</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">/&gt;</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="ot">      src=</span><span class="st">&quot;./img/wishlist-preview-img-04.png&quot;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="ot">      srcset=</span><span class="st">&quot;./img/wishlist-preview-img-04@2x.png 2x&quot;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="ot">      alt=</span><span class="st">&quot;wishlist preview image&quot;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="ot">      class=</span><span class="st">&quot;mw-wishlist-preview__image&quot;</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">/&gt;</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-wishlist-preview__name&quot;</span><span class="kw">&gt;</span>Новый год<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-wishlist-preview</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">238</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-wishlist-preview__images</span> {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: grid<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-columns</span>: <span class="fu">repeat(</span><span class="dv">2</span><span class="op">,</span> <span class="dv">1</span>fr<span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-template-rows</span>: <span class="fu">repeat(</span><span class="dv">2</span><span class="op">,</span> <span class="dv">1</span>fr<span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-row-gap</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">grid-column-gap</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">238</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-wishlist-preview__images</span> img {</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">114</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">114</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span>: <span class="fu">var(</span><span class="va">--border-radius-m</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-wishlist-preview__name</span> {</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-top</span>: <span class="dv">12</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-weight</span>: <span class="dv">bold</span><span class="op">;</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">18</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span>: <span class="dv">21</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Забежим немного вперёд. У карточки могут появиться дополнительные интерфейсные модификации: например, у названия может появиться дополнительная подпись или сетка картинок изменится с 2×2 на 3×3. Для них нужно будет просто завести новые элементы или заменить модификаторы на существующие.</p>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/my-wish/css/components/mw-wishlist-preview.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+</div>
+</section>
+<section id="баннер-и-карточка-подарка.-релиз." class="level2" data-number="4.4">
+<h2 data-number="4.4">4.4. Баннер и карточка подарка. Релиз.</h2>
+<div class="text-container text-container--module">
+<section id="баннер" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1">Баннер</h3>
+<figure>
+<img src="../media/file140.png" alt="Промо" />
+<figcaption aria-hidden="true">Промо</figcaption>
+</figure>
+<p>Назовём <code>mw-promo</code>.</p>
+<p>Напрашивается название <code>mw-banner</code>, но мы подойдём к выбору имени чуть шире. Баннер — один из множества интерфейсных промо-элементов, которые могут быть в продукте. В будущем реализованный баннер может стать модификацией: <code>mw-promo_type_banner</code>, и у нас останется пространство для новых промо-компонентов. Удобно.</p>
+<p>Модификаций у промо-блока пока нет, реализуем по дизайну. Иллюстрация векторная, вставим SVG-файлом.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-promo&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-promo__wrapper&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-promo__image&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;svg</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        width=</span><span class="st">&quot;120&quot;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        height=</span><span class="st">&quot;120&quot;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ot">        fill=</span><span class="st">&quot;none&quot;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ot">        xmlns=</span><span class="st">&quot;http://www.w3.org/2000/svg&quot;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        ...</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;/svg&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;mw-promo__content&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;p&gt;</span>Подпишитесь на уведомления на почту, чтобы не пропустить праздник<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;div</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="ot">        class=</span><span class="st">&quot;mw-button mw-button_view_primary mw-button_has-icon_no-icon mw-button_size_s&quot;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        Уведомлять о сроках</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-promo</span> {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: flex<span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">justify-content</span>: space-around<span class="op">;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#f4f3f5</span><span class="op">;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">32</span><span class="dt">px</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-promo__wrapper</span> {</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: flex<span class="op">;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-promo__image</span> {</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-right</span>: <span class="dv">32</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-promo__content</span> {</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">432</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-weight</span>: <span class="dv">normal</span><span class="op">;</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">18</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span>: <span class="dv">140</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">letter-spacing</span>: <span class="dv">0.02</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-promo__content</span> p {</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-bottom</span>: <span class="dv">12</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/my-wish/css/components/mw-promo.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+<section id="карточка-подарка" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2">Карточка подарка</h3>
+<figure>
+<img src="../media/file141.png" alt="Новая карточка подарка" />
+<figcaption aria-hidden="true">Новая карточка подарка</figcaption>
+</figure>
+<p>В текущих и новых карточках различается только бейдж: у него другой внешний вид и позиция.</p>
+<figure>
+<img src="../media/file142.png" alt="Карточки подарков — сравнение" />
+<figcaption aria-hidden="true">Карточки подарков — сравнение</figcaption>
+</figure>
+<p>Сразу хочется вынести бейдж отдельным компонентом, ведь у него появилось ещё три новых модификации. Однако на текущем этапе это лишняя работа, потому что бейдж используется только в компоненте карточки подарка.</p>
+<blockquote>
+<p>Простой критерий для выделения совсем новых компонентов или новых из существующих: необходимость использования в 2+ местах.</p>
+</blockquote>
+<p>Помним, что мы работаем над карточкой подарка <code>mw-giftcard</code>, и добавим три новых значения модификатора <code>status</code>, которые будут управлять внешним видом бейджей:</p>
+<ul>
+<li><code>mw-giftcard_status_date-planned</code> (фиолетовый);</li>
+<li><code>mw-giftcard_status_date-coming</code> (оранжевый);</li>
+<li><code>mw-giftcard_status_date-expired</code> (красный).</li>
+</ul>
+<p>Каждый статус отвечает за близость к дате дня рождения: дата запланирована, дата близко, пользователь просрочил дату.</p>
+<blockquote>
+<p>Почему не стоит называть статус по имени цвета, например, <code>mw-giftcard_status_violet</code>? Для такого специфичного компонента (это не кнопка и не чекбокс) название значения модификатора строится от фичи, а не от цвета или другого выразительного свойства. Более того, если нам понадобится заменить фиолетовый цвет на какой-то другой, достаточно будет заменить переменную в самом класс один раз, а не «бегать» по сервису с find &amp; replace в кодовом редакторе.</p>
+</blockquote>
+<div class="sourceCode" id="cb7"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-giftcard_status_date-planned</span> <span class="fu">.mw-giftcard__badge</span> {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background</span>: <span class="fu">var(</span><span class="va">--color-bg-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-accent</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="fu">var(</span><span class="va">--color-text-accent</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-giftcard_status_date-coming</span> <span class="fu">.mw-giftcard__badge</span> {</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background</span>: <span class="fu">var(</span><span class="va">--color-bg-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-warning</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="fu">var(</span><span class="va">--color-text-warning</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-giftcard_status_date-expired</span> <span class="fu">.mw-giftcard__badge</span> {</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background</span>: <span class="fu">var(</span><span class="va">--color-bg-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-error</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="fu">var(</span><span class="va">--color-text-error</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Помимо этого, нам нужно добавить новую иконку <code>calendar</code> и модификации для неё, чтобы она подчинялась правилу на цвет: какой цвет у текста, такой и у иконки в бейдже. Игнорировать это правило нельзя, потому что в данном контексте иконка — поддерживающий элемент. Она дополняет смысл текстовой части.</p>
+<p>При этом старые бейджи в начальной реализации удалять сразу не нужно, чтобы поддержать обратную совместимость и не сломать интерфейс другим командам, использующим компонент. Давайте просто введём новый модификатор <code>badge-position</code>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-giftcard__badge_position_bottom-right</span> {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">top</span>: <span class="dv">-121</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">right</span>: <span class="dv">-100</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">.mw-giftcard__badge_position_top-left</span> {</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">top</span>: <span class="dv">-367</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">left</span>: <span class="dv">-12</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/my-wish/css/components/mw-giftcard.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+<section id="обновление-библиотеки" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3">Обновление библиотеки</h3>
+<p>Выкатывая обновление, не забудьте предупредить пользователей дизайн-системы о новых компонентах и их статусах.</p>
+</section>
+</div>
+</section>
+<section id="задание" class="level2" data-number="4.5">
+<h2 data-number="4.5">4.5. Задание</h2>
+<div class="text-container text-container--module">
+<p>Изучите новые макеты и попробуйте реализовать новые компоненты в дизайн-системе учебного проекта One Doc.</p>
+<p>Дизайн-макеты для работы доступны по ссылке выше.</p>
+</div>
+</section>
+<section id="разбор-задания" class="level2" data-number="4.6">
+<h2 data-number="4.6">4.6. Разбор задания</h2>
+<div class="text-container text-container--module">
+<p>Что изменилась в новых макетах?</p>
+<section id="шапка" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1">Шапка</h3>
+<figure>
+<img src="../media/file143.png" alt="Новая шапка" />
+<figcaption aria-hidden="true">Новая шапка</figcaption>
+</figure>
+<p>В шапке появился модуль нотификаций. Он вызывается кнопкой с иконкой. Сам блок нотификаций — простой список, появляющийся поверх контента страницы контекстным меню.</p>
+<p>Само выпадающее меню сделаем отдельным компонентом <code>od-notifications-menu</code>, потому что в нём периодически могут накапливаться изменения. Их проще поддерживать отдельно от шапки . После того как сделаем бейджи, добавим в первый элемент списка синий бейдж.</p>
+<p>Займёмся ими позже.</p>
+<p>Поищем пересечения в компонентах шапки и остальном интерфейсе.</p>
+</section>
+<section id="бейджи" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2">Бейджи</h3>
+<figure>
+<img src="../media/file144.png" alt="Бейджи" />
+<figcaption aria-hidden="true">Бейджи</figcaption>
+</figure>
+<p><code>od-badge</code></p>
+<p>В нотификациях и карточке документа бейджи пересекаются. У них разный размер, но структура и функция одинаковые: бейдж показывает статус сообщения, документа и может быть применён к другой смысловой единице. Нужно выносить в отдельный компонент!</p>
+<p>На деле нам понадобится два модификатора: на внешний вид <code>view</code> с несколькими значениями и на размер <code>size</code> — с двумя. Сам компонент <code>od-badge</code> по структуре простой, внутри только текст.</p>
+<p>Его нужно будет «прокинуть» в <code>od-notifications-menu</code> после создания компонента.</p>
+<p>Итак, разметка бейджа:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-badge od-badge_status_new od-badge_size_s&quot;</span><span class="kw">&gt;</span>Новое<span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<p>Внешний вид:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-badge_status_new</span> {</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="fu">var(</span><span class="va">--color-accent-main</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-badge_status_waiting</span> {</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#f69134</span><span class="op">;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-badge_status_signed</span> {</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="fu">var(</span><span class="va">--color-accent-success</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-badge_status_expired</span> {</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#e94343</span><span class="op">;</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Размер:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-badge_size_s</span> {</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">14</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span>: <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-badge_size_m</span> {</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">line-height</span>: <span class="dv">22</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/one-doc/css/components/od-badge.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+<section id="пользователь" class="level3" data-number="4.6.3">
+<h3 data-number="4.6.3">Пользователь</h3>
+<figure>
+<img src="../media/file145.png" alt="Компонент пользователя" />
+<figcaption aria-hidden="true">Компонент пользователя</figcaption>
+</figure>
+<p><code>od-user</code></p>
+<p>В контентной области появилась картинка пользователя с ФИО и должностью сотрудника. В шапке тоже есть такая картинка, мы получаем два места использования. Можно было бы выделить в этот компонент просто картинку, но мы предлагаем захватить чуть шире. Из шапки возьмём картинку с иконкой стрелки, а из контентной области — картинку с текстовыми блоками. В будущем это пригодится, когда нужно будет делать другие комбинации с картинкой пользователя из озвученных или других элементов.</p>
+<p>Картинки пользователя в дизайне разного размера, поэтому введём модификатор <code>size</code>. В то же время у компонента разный контент справа, для его определения подойдёт модификатор <code>type</code> со значениями <code>has-icon</code> и <code>has-label</code>.</p>
+<p>Для текста можно применить существующие текстовые стили:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-user od-user_size_m od-user_type_has-label&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;./img/userpic.png&quot;</span> <span class="er">srcset</span><span class="ot">=</span><span class="st">&quot;./img/userpic@2x.png 2x&quot;</span> <span class="er">alt</span><span class="ot">=</span><span class="st">&quot;userpic&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-icon od-icon_size_s&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-user__label&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-text od-text_size_s od-text_weight_bold&quot;</span><span class="kw">&gt;</span>Петров А.К.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-text od-text_size_s od-text_weight_regular&quot;</span><span class="kw">&gt;</span>Специалист<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user</span> {</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: flex<span class="op">;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-direction</span>: row<span class="op">;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span>: <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user</span> img {</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#cccccc</span><span class="op">;</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">-webkit-box-shadow</span>: <span class="dv">inset</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">1</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">255</span><span class="op">,</span> <span class="dv">255</span><span class="op">,</span> <span class="dv">255</span><span class="op">,</span> <span class="dv">0.4</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">-moz-box-shadow</span>: <span class="dv">inset</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">1</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">255</span><span class="op">,</span> <span class="dv">255</span><span class="op">,</span> <span class="dv">255</span><span class="op">,</span> <span class="dv">0.4</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">box-shadow</span>: <span class="dv">inset</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">1</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">255</span><span class="op">,</span> <span class="dv">255</span><span class="op">,</span> <span class="dv">255</span><span class="op">,</span> <span class="dv">0.4</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user_size_s</span> img {</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">32</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">32</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user_size_m</span> img {</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">40</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">height</span>: <span class="dv">40</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user_type_has-icon</span> <span class="fu">.od-icon</span> {</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-left</span>: <span class="dv">4</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user_type_has-icon</span> <span class="fu">.od-user__label</span> {</span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user_type_has-label</span> <span class="fu">.od-user__label</span> {</span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-left</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-user_type_has-label</span> <span class="fu">.od-icon</span> {</span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Позже добавим <code>od-user</code> в шапку.</p>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/one-doc/css/components/od-user.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+<section id="карточка-документа" class="level3" data-number="4.6.4">
+<h3 data-number="4.6.4">Карточка документа</h3>
+<figure>
+<img src="../media/file146.png" alt="Карточка документа" />
+<figcaption aria-hidden="true">Карточка документа</figcaption>
+</figure>
+<p><code>od-card</code></p>
+<p>Карточка документа тоже обновилась, пропали кнопка и дата, добавился бейдж, который рассмотрели выше.</p>
+<p>Теперь у нас два вида карточек. Размеры не поменялись, только контент. Заведём модификатор <code>type</code> со значениями <code>with-date</code> для старой карточки и <code>with-badge</code> — для новой.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-card od-card_type_with-badge&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-card__header&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-text od-text_size_s od-text_weight_bold&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>      Длинное название документа в несколько строк</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/p&gt;</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-card__footer&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-badge od-badge_status_expired od-badge_size_m&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>      Просрочено</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/one-doc/css/components/od-card.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+<section id="меню-нотификаций" class="level3" data-number="4.6.5">
+<h3 data-number="4.6.5">Меню нотификаций</h3>
+<figure>
+<img src="../media/file147.png" alt="Новая шапка" />
+<figcaption aria-hidden="true">Новая шапка</figcaption>
+</figure>
+<p><code>od-notifications-menu</code></p>
+<p>В связке с меню идёт кнопка для вызова. Кнопка без заливки у нас есть, но она реализована для светлого фона. Заведём новый модификатор на внешний вид <code>od-button_view_transparent-inverse</code>. Дополнительно понадобится новая иконка колокольчика <code>bell</code>, экспортируем SVG из Фигмы:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-button_view_transparent-inverse</span> {</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">8</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="fu">var(</span><span class="va">--color-text-inverse</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="dv">transparent</span><span class="op">;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border</span>: <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Далее займёмся списком нотификаций. Первый элемент отличается от остальных, у него есть бейдж. Так как бейджи получились с широкими выразительными возможностями, на одном исключительном статусе нотификации не закончатся. Поэтому для первого элемента списка сделаем модификатор элемента <code>status</code> со значением <code>is-new</code>. Контент для наполнения: текст и иконки, которые реализованы в дизайн-системе MyDoc ранее.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-notifications-menu&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="ot">    class=</span><span class="st">&quot;od-notifications-menu__item od-notifications-menu__item_status_is-new&quot;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    ...</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-notifications-menu__item&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/div&gt;</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;od-notifications-menu__item&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/div&gt;</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-notifications-menu</span> {</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: fit-content<span class="op">;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">12</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="fu">var(</span><span class="va">--color-bg-primary</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">box-shadow</span>: <span class="dv">0</span> <span class="dv">4</span><span class="dt">px</span> <span class="dv">8</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">40</span><span class="op">,</span> <span class="dv">46</span><span class="op">,</span> <span class="dv">54</span><span class="op">,</span> <span class="dv">0.2</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span>: <span class="fu">var(</span><span class="va">--border-radius-s</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="fu">.od-notifications-menu__item</span> {</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: flex<span class="op">;</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span>: <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">12</span><span class="dt">px</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<hr />
+<p>Если посмотреть шире, то в любой дизайн-системе будут полезны списки. На длинной дистанции (или если списков становится 3–4 вида) этот компонент можно прокачать до верхнеуровневого <code>od-list</code>. Он будет универсальной обёрткой для элементов списка, которые можно в любом количестве и с любым визуалом «пробрасывать» в этого родителя.</p>
+</section>
+<section id="доделаем-шапку" class="level3" data-number="4.6.6">
+<h3 data-number="4.6.6">Доделаем шапку</h3>
+<p>Добавим в шапку кнопку и меню нотификаций, новый компонент пользователя. Готово!</p>
+<p><a href="https://github.com/htmlacademy/design-systems-source/blob/9e363981ada6471049f3ab6d30c607b2e5a00547/module-4/one-doc/css/components/od-header.css#L1">Файл в репозитории на Github ↗</a></p>
+</section>
+</div>
+</section>
+</section>
+</body>
+</html>
