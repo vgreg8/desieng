@@ -1,0 +1,41 @@
+.mw-tabs {
+  display: block;
+  width: 100%;
+}
+
+.mw-tabs__center-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  height: 56px;
+}
+
+.mw-tabs__underline {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+input.mw-tabs__tab {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+input.mw-tabs__tab + label {
+  float: left;
+  padding: 16px;
+  background-color: #ffffff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+input.mw-tabs__tab + label:hover {
+  background-color: var(--color-bg-primary);
+}
+
+input.mw-tabs__tab:checked + label {
+  color: var(--color-text-accent);
+  box-shadow: 0 4px 0 -1px var(--color-text-accent);
+  background-color: var(--color-bg-primary);
+}

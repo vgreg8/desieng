@@ -1,0 +1,31 @@
+.mw-promo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #F4F3F5;
+  padding: 32px 0;
+}
+
+.mw-promo__wrapper {
+  display: flex;
+}
+
+.mw-promo__image {
+  width: 120px;
+  height: 120px;
+  margin-right: 32px;
+}
+
+.mw-promo__content {
+  display: block;
+  width: 432px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: var(--color-text-primary)
+}
+
+.mw-promo__content p {
+  margin-bottom: 12px;
+}

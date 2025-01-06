@@ -1,0 +1,22 @@
+{
+  "name": "MyWish",
+  "version": "1.0.0",
+  "description": "Учебный проект HTML Академии",
+  "source": "index.html",
+  "scripts": {
+    "test": "htmlhint ./*.html ./build/*.html",
+    "start": "parcel --no-source-maps --no-cache",
+    "build": "parcel build"
+  },
+  "author": "Ilya Kolebayev",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.4.0",
+    "eslint-config-htmlacademy": "^5.0.0",
+    "htmlhint": "^1.0.0",
+    "parcel": "^2.0.1",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-htmlacademy": "^0.1.11"
+  }
+}

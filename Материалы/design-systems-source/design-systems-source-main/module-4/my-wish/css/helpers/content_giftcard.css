@@ -1,0 +1,11 @@
+.giftcard-preview > div {
+  display: flex;
+}
+
+.giftcard-preview > div:first-child {
+  margin-bottom: 40px;
+}
+
+.giftcard-preview pre {
+  margin-left: 12px;
+}

@@ -1,0 +1,67 @@
+.mw-input {
+  margin-bottom: 1rem;
+}
+
+.mw-input__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 7px 12px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-accent);
+  border-radius: var(--border-radius-half);
+  background-clip: padding-box;
+}
+
+.mw-input__input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.mw-input__input:focus {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-bg-accent);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--color-control-shadow);
+}
+
+.mw-input_state_error {
+  border-color: var(--color-bg-error);
+}
+
+.mw-input__message {
+  display: none;
+  width: 100%;
+  margin: 4px 0 0 16px;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--color-text-error);
+}
+
+.mw-input_state_error ~ .mw-input__message {
+  display: block;
+}
+
+.mw-input_has-icon_none {
+  background-image: none;
+}
+
+.mw-input_has-icon_icon-left {
+  padding-left: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z' fill='%237D00FB'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: left 12px center;
+  background-size: 24px;
+}
+
+.mw-input_has-icon_iсon-right {
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z' fill='%237D00FB'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 24px;
+}

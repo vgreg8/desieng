@@ -1,0 +1,109 @@
+.mw-giftcard {
+  width: 240px;
+  cursor: pointer;
+}
+
+.mw-giftcard > * {
+  position: relative;
+  z-index: 100;
+}
+
+.mw-giftcard_status_clear .mw-giftcard__badge {
+  display: none;
+}
+
+.mw-giftcard_status_is-giving .mw-giftcard__badge {
+  background: var(--color-bg-accent);
+  color: var(--color-text-primary-inverse);
+}
+
+.mw-giftcard_status_you-giving .mw-giftcard__badge {
+  background: var(--color-bg-warning);
+  color: var(--color-text-primary-inverse);
+}
+
+.mw-giftcard_status_already-given .mw-giftcard__badge {
+  background: var(--color-bg-success);
+  color: var(--color-text-primary-inverse);
+}
+
+.mw-giftcard_status_date-planned .mw-giftcard__badge {
+  background: var(--color-bg-primary);
+  color: var(--color-text-accent);
+  border: 1px solid var(--color-text-accent);
+}
+
+.mw-giftcard_status_date-coming .mw-giftcard__badge {
+  background: var(--color-bg-primary);
+  color: var(--color-text-warning);
+  border: 1px solid var(--color-text-warning);
+}
+
+.mw-giftcard_status_date-expired .mw-giftcard__badge {
+  background: var(--color-bg-primary);
+  color: var(--color-text-error);
+  border: 1px solid var(--color-text-error);
+}
+
+.mw-giftcard__image > img {
+  height: 329px;
+  border-radius: var(--border-radius-l);
+}
+
+.mw-giftcard__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 329px;
+  z-index: 20;
+  border-radius: var(--border-radius-l);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.03)
+  );
+}
+
+.mw-giftcard__heading {
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 12px 0 4px 0;
+  text-overflow: ellipsis;
+}
+
+.mw-giftcard__subheading {
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.mw-giftcard__badge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-half);
+}
+
+.mw-giftcard__badge_position_bottom-right {
+  top: -121px;
+  right: -100px;
+}
+
+.mw-giftcard__badge_position_top-left {
+  top: -367px;
+  left: -12px;
+}
+
+.mw-giftcard__badge-image {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}

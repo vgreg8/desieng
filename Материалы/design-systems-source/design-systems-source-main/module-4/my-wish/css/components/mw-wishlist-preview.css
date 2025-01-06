@@ -1,0 +1,28 @@
+.mw-wishlist-preview {
+  display: block;
+  width: 238px;
+  cursor: pointer;
+}
+
+.mw-wishlist-preview__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 238px;
+}
+
+.mw-wishlist-preview__images img {
+  width: 114px;
+  height: 114px;
+  border-radius: var(--border-radius-m);
+}
+
+.mw-wishlist-preview__name {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-text-primary);
+}

@@ -1,0 +1,11 @@
+.mw-grid {
+  display: grid;
+}
+
+.mw-grid_col_4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.mw-grid_col-gap_m {
+  grid-column-gap: 24px;
+}

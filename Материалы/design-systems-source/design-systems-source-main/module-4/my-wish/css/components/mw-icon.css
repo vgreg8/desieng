@@ -1,0 +1,96 @@
+.mw-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mw-icon_view_primary {
+  background-color: var(--color-text-primary);
+}
+
+.mw-icon_view_primary-inverse {
+  background-color: var(--color-text-primary-inverse);
+}
+
+.mw-icon_view_accent {
+  background-color: var(--color-text-accent);
+}
+
+.mw-icon_view_warning {
+  background-color: var(--color-text-warning);
+}
+
+.mw-icon_view_error {
+  background-color: var(--color-text-error);
+}
+
+/* перечисление иконок */
+
+.mw-icon_name_arrow-down {
+  -webkit-mask-image: url("../../icons/icon-arrow-down.svg");
+  mask-image: url("../../icons/icon-arrow-down.svg");
+}
+
+.mw-icon_name_arrow-right {
+  -webkit-mask-image: url("../../icons/icon-arrow-right.svg");
+  mask-image: url("../../icons/icon-arrow-right.svg");
+}
+
+.mw-icon_name_at {
+  -webkit-mask-image: url("../../icons/icon-at.svg");
+  mask-image: url("../../icons/icon-at.svg");
+}
+
+.mw-icon_name_chevron-left {
+  -webkit-mask-image: url("../../icons/icon-chevron-left.svg");
+  mask-image: url("../../icons/icon-chevron-left.svg");
+}
+
+.mw-icon_name_hand {
+  -webkit-mask-image: url("../../icons/icon-hand.svg");
+  mask-image: url("../../icons/icon-hand.svg");
+}
+
+.mw-icon_name_miracle {
+  -webkit-mask-image: url("../../icons/icon-miracle.svg");
+  mask-image: url("../../icons/icon-miracle.svg");
+}
+
+.mw-icon_name_present {
+  -webkit-mask-image: url("../../icons/icon-present.svg");
+  mask-image: url("../../icons/icon-present.svg");
+}
+
+.mw-icon_name_search {
+  -webkit-mask-image: url("../../icons/icon-search.svg");
+  mask-image: url("../../icons/icon-search.svg");
+}
+
+.mw-icon_name_share {
+  -webkit-mask-image: url("../../icons/icon-share.svg");
+  mask-image: url("../../icons/icon-share.svg");
+}
+
+.mw-icon_name_instagram {
+  -webkit-mask-image: url("../../icons/icon-instagram.svg");
+  mask-image: url("../../icons/icon-instagram.svg");
+}
+
+.mw-icon_name_vk {
+  -webkit-mask-image: url("../../icons/icon-vk.svg");
+  mask-image: url("../../icons/icon-vk.svg");
+}
+
+.mw-icon_name_facebook {
+  -webkit-mask-image: url("../../icons/icon-facebook.svg");
+  mask-image: url("../../icons/icon-facebook.svg");
+}
+
+.mw-icon_name_twitter {
+  -webkit-mask-image: url("../../icons/icon-twitter.svg");
+  mask-image: url("../../icons/icon-twitter.svg");
+}
+
+.mw-icon_name_calendar {
+  -webkit-mask-image: url("../../icons/icon-calendar.svg");
+  mask-image: url("../../icons/icon-calendar.svg");
+}

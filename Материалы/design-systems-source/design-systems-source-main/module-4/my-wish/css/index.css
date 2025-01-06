@@ -1,0 +1,80 @@
+:root {
+  /* цвета фонов */
+  --color-bg-accent: #7d00fb;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f4f3f5;
+  --color-bg-error: #e94343;
+  --color-bg-success: #0da939;
+  --color-bg-warning: #f68500;
+  /* цвета текста */
+  --color-text-primary: #000000;
+  --color-text-primary-inverse: #ffffff;
+  --color-text-secondary: rgba(0, 0, 0, 0.4);
+  --color-text-accent: #7d00fb;
+  --color-text-success: #0da939;
+  --color-text-error: #e94343;
+  --color-text-warning: #f68500;
+  /* скругления */
+  --border-radius-s: 6px;
+  --border-radius-m: 8px;
+  --border-radius-l: 16px;
+  --border-radius-half: 99rem;
+  /* спешл для контролов */
+  --color-control-bg-primary-hover: #962eff;
+
+  --color-control-border-bordered-hover: #962eff;
+  --color-control-text-bordered-hover: #962eff;
+
+  --color-control-bg-secondary-hover: #f4ecfc;
+  --color-control-text-secondary-hover: #962eff;
+
+  --color-control-shadow: rgba(125, 0, 251, 0.25);
+  --color-control-bg-disabled: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url("../font/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "Rubik", "apple-system", "Segoe UI", "Roboto", "Oxygen-Sans",
+    "Ubuntu", "Cantrell", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+}
+
+main {
+  margin: 0 20px;
+  overflow-y: scroll;
+}
+
+code {
+  white-space: pre-wrap;
+}
+
+.row-block {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 3fr 9fr;
+  padding: 20px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.row-block__name {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #454a54;
+}
+
+.row-block__description {
+  margin-bottom: 20px;
+  color: rgba(38, 42, 48, 0.4);
+}
