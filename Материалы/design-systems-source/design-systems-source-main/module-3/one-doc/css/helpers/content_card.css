@@ -1,0 +1,7 @@
+.card__preview {
+  display: block; 
+}
+
+.card__preview pre {
+  margin-top: 20px;
+}

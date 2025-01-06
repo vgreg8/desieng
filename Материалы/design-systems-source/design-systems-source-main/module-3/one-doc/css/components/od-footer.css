@@ -1,0 +1,15 @@
+.od-footer {
+  display: block;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+}
+
+.od-footer__label {
+  margin: 12px 0 32px 0;
+  text-align: center;
+}
+
+.od-footer__label a {
+  color: var(--color-accent-main);
+  text-decoration: none;
+}

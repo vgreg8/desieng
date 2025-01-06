@@ -1,0 +1,16 @@
+.od-layout {
+  display: grid;
+}
+
+.od-layout_cols_3 {
+  max-width: 1024px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 12px;
+  margin: 0 auto;
+}
+
+.od-layout_cols_2 {
+  width: 100%;
+  grid-template-columns: 320px 1fr;
+  column-gap: 0px;
+}

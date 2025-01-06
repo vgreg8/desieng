@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>One Doc — Components</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- компоненты -->
+    <link rel="stylesheet" href="./css/components/od-text.css" />
+    <link rel="stylesheet" href="./css/components/od-header.css" />
+    <link rel="stylesheet" href="./css/components/od-layout.css" />
+    <link rel="stylesheet" href="./css/components/od-footer.css" />
+    <link rel="stylesheet" href="./css/components/od-icon.css" />
+    <link rel="stylesheet" href="./css/components/od-logo.css" />
+    <link rel="stylesheet" href="./css/components/od-search-field.css" />
+    <link rel="stylesheet" href="./css/components/od-button.css" />
+    <link rel="stylesheet" href="./css/components/od-radio-group.css" />
+    <link rel="stylesheet" href="./css/components/od-sidenav.css" />
+    <link rel="stylesheet" href="./css/components/od-link.css" />
+    <link rel="stylesheet" href="./css/components/od-card.css" />
+    <link rel="stylesheet" href="./css/components/od-collapse.css" />
+    <!-- компоненты -->
+
+    <!-- витрина -->
+    <link rel="stylesheet" href="./css/helpers/header.css" />
+    <link rel="stylesheet" href="./css/helpers/content_tokens.css" />
+    <link rel="stylesheet" href="./css/helpers/content_text.css" />
+    <link rel="stylesheet" href="./css/helpers/content_layout.css" />
+    <link rel="stylesheet" href="./css/helpers/content_footer.css" />
+    <link rel="stylesheet" href="./css/helpers/content_icons.css" />
+    <link rel="stylesheet" href="./css/helpers/content_logo.css" />
+    <link rel="stylesheet" href="./css/helpers/content_search-field.css" />
+    <link rel="stylesheet" href="./css/helpers/content_button.css" />
+    <link rel="stylesheet" href="./css/helpers/content_radio-group.css" />
+    <link rel="stylesheet" href="./css/helpers/content_sidenav.css" />
+    <link rel="stylesheet" href="./css/helpers/content_link.css" />
+    <link rel="stylesheet" href="./css/helpers/content_card.css" />
+    <link rel="stylesheet" href="./css/helpers/content_collapse.css" />
+    <!-- витрина -->
+
+    <link rel="stylesheet" href="./css/stackoverflow-light.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__left">One&#160;Doc&#160;—&#160;Components</div>
+        <div class="header__rigth">Демо&#160;HTML&#160;Акакдемии</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- токены -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Токены</div>
+          <div class="row-block__description">токены дизайн-системы</div>
+        </div>
+
+        <div class="tokens-grid">
+          <div class="tokens">
+            <div class="row-block__description">Акцентные цвета</div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_accent_main"></div>
+              <div class="token__info">
+                <div class="color-name">Главный</div>
+                <code>--color-accent-main</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_accent_success"></div>
+              <div class="token__info">
+                <div class="color-name">Успешного действия</div>
+                <code>--color-accent-success</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="row-block__description">Цвета текста</div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_primary"></div>
+              <div class="token__info">
+                <div class="color-name">Основной</div>
+                <code>--color-text-primary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_secondary"></div>
+              <div class="token__info">
+                <div class="color-name">Второстепенный</div>
+                <code>--color-text-secondary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_main"></div>
+              <div class="token__info">
+                <div class="color-name">Главный</div>
+                <code>--color-text-main</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_text_inverse"></div>
+              <div class="token__info">
+                <div class="color-name">Инверсный</div>
+                <code>--color-text-inverse</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="row-block__description">Цвета фонов</div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_primary"></div>
+              <div class="token__info">
+                <div class="color-name">Основной</div>
+                <code>--color-bg-primary</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_inverse"></div>
+              <div class="token__info">
+                <div class="color-name">Инверсный</div>
+                <code>--color-bg-inverse</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_substrate"></div>
+              <div class="token__info">
+                <div class="color-name">Подложки</div>
+                <code>--color-bg-substrate</code>
+              </div>
+            </div>
+
+            <div class="token">
+              <div class="token__bubble token__bubble_bg_divider"></div>
+              <div class="token__info">
+                <div class="color-name">Разделители</div>
+                <code>--color-bg-divider</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="tokens">
+            <div class="tokens-merge">
+              <div class="row-block__description">Скругления</div>
+              <div class="token">
+                <div class="token__bubble token__bubble_border-radius_s"></div>
+                <div class="token__info">
+                  <div class="color-name">6px</div>
+                  <code>--border-radius-s</code>
+                </div>
+              </div>
+            </div>
+
+            <div class="tokens-merge">
+              <div class="row-block__description">Отступы</div>
+              <p>Отступы кратны 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- токены -->
+
+      <!-- текст -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Текстовые стили</div>
+          <div class="row-block__description">od-text</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">
+            Текстовый стиль собирается из нескольких классов в зависимости от
+            свойств.
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_l od-text_weight_bold">
+              Заголовок
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_l od-text_weight_bold"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_m od-text_weight_bold">
+              Заголовок поменьше
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_m od-text_weight_bold"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_s od-text_weight_bold">
+              Совсем маленький заголовок
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_s od-text_weight_bold"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_s od-text_weight_regular">
+              Основной текст
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_s od-text_weight_regular"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_s od-text_weight_medium">
+              Цветной и белый текст
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_s od-text_weight_medium"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_xs od-text_weight_regular">
+              Подписи
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_xs od-text_weight_regular"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <div class="od-text od-text_size_xs od-text_weight_medium">
+              Цветные и белые подписи
+            </div>
+            <div>
+              <pre><code class="language-html">&lt;div class="od-text od-text_size_xs od-text_weight_medium"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- текст -->
+
+      <!-- хэдер -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Шапка (Хэдер)</div>
+          <div class="row-block__description">od-header</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">Шапка</div>
+          <div class="od-header">
+            <div class="od-header_side_left">
+              <div class="od-header__logo">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.8335 4.1665C12.2812 4.1665 11.8335 4.61422 11.8335 5.1665V24.8332C11.8335 25.3855 12.2812 25.8332 12.8335 25.8332H25.0002C25.5524 25.8332 26.0002 25.3855 26.0002 24.8332V9.58072C26.0002 9.3155 25.8948 9.06115 25.7073 8.87361L21.2931 4.4594C21.1055 4.27186 20.8512 4.1665 20.5859 4.1665H12.8335ZM20.5835 5.4165V8.58317C20.5835 9.13546 21.0312 9.58317 21.5835 9.58317H24.7502L20.5835 5.4165Z"
+                  />
+                  <path
+                    d="M6 7.76401C6 7.51958 6.08952 7.28362 6.25165 7.1007L9 4V26H7C6.44772 26 6 25.5523 6 25V7.76401Z"
+                  />
+                </svg>
+                <div class="od-text od-text_size_m od-text_weight_bold">
+                  ООО «Тель»
+                </div>
+              </div>
+            </div>
+            <div class="od-header_side_right">
+              <img
+                src="./img/userpic.png"
+                srcset="./img/userpic@2x.png 2x"
+                alt="userpic"
+              />
+              <div class="od-icon od-icon_size_s">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <pre><code class="language-html">&lt;div class="od-header"&gt;...&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <!-- хэдер -->
+
+      <!-- сетка на проекте / лэйаут -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Лэйаут</div>
+          <div class="row-block__description">od-layout</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">
+            Трехколоночный лэйаут с равными колонками
+          </div>
+          <div class="decoration-wrapper">
+            <div class="od-layout od-layout_cols_3 layout-decoration">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <pre><code class="language-html">&lt;div class="od-layout od-layout_cols_3"&gt;...&lt;/div&gt;</code></pre>
+          <br />
+          <div class="row-block__description">
+            Двухколоночный лэйаут с фиксированной колонкой слева
+          </div>
+          <div
+            class="od-layout od-layout_cols_2 layout-decoration-single-border"
+          >
+            <div></div>
+            <div></div>
+          </div>
+          <pre><code class="language-html">&lt;div class="od-layout od-layout_cols_2"&gt;...&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <!-- сетка на проекте / лэйаут -->
+
+      <!-- футер -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Подвал (Футер)</div>
+          <div class="row-block__description">od-footer</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">Футер страницы</div>
+          <div class="od-footer">
+            <p class="od-footer__label">Powered <a href="">by OneDoc</a></p>
+          </div>
+          <pre><code class="language-html">&lt;div class="od-footer"&gt;...&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <!-- футер -->
+
+      <!-- иконки -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Иконки</div>
+          <div class="row-block__description">od-icon</div>
+        </div>
+
+        <div class="icon">
+          <div class="row-block__description">Общий список иконок</div>
+          <div class="icon__preview">
+            <div>
+              <div class="od-icon od-icon_size_s od-icon_view_secondary">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m2.5 14.6-.5.865c.588.34 1.271.535 2 .535h2.667v-1H4c-.548 0-1.06-.146-1.5-.4Zm6.833.4v1H12c.729 0 1.412-.195 2-.535l-.5-.866c-.44.255-.952.401-1.5.401H9.333ZM15 6.667h1V4c0-.729-.195-1.412-.535-2l-.866.5c.255.44.401.952.401 1.5v2.667ZM4 0h2.667v1H4c-.548 0-1.06.146-1.5.4L2 .536A3.982 3.982 0 0 1 4 0ZM1 9.333H0V12c0 .729.195 1.412.535 2l.866-.5C1.146 13.06 1 12.547 1 12V9.333Zm0-2.666H0V4c0-.729.195-1.412.535-2l.866.5C1.146 2.94 1 3.452 1 4v2.667ZM9.333 1V0H12c.729 0 1.412.195 2 .535l-.5.866C13.06 1.146 12.547 1 12 1H9.333ZM15 9.333h1V12c0 .729-.195 1.412-.535 2l-.866-.5c.255-.44.401-.952.401-1.5V9.333ZM9.178 8.64c.222.16.334.386.334.68 0 .277-.125.5-.375.667-.246.164-.575.246-.985.246-.445 0-.804-.105-1.078-.316a1.135 1.135 0 0 1-.433-.867H5.557c0 .375.109.724.328 1.049.222.32.53.57.92.75.39.18.84.27 1.347.27.723 0 1.31-.17 1.764-.51a1.63 1.63 0 0 0 .68-1.366c0-.34-.082-.627-.246-.861-.16-.238-.409-.442-.745-.61-.335-.167-.775-.312-1.318-.433-.539-.121-.912-.248-1.119-.381a.658.658 0 0 1-.31-.592c0-.277.11-.502.333-.674.223-.171.532-.257.926-.257.383 0 .7.107.95.322.253.215.38.47.38.767h1.09c0-.578-.225-1.052-.674-1.423-.445-.371-1.027-.557-1.746-.557-.683 0-1.246.18-1.687.539-.438.36-.657.799-.657 1.318 0 .313.077.582.229.809.156.227.394.422.715.586.324.164.76.305 1.306.422.551.117.936.258 1.155.422Z"
+                  />
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_secondary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m2.5 22.6-.5.865c.588.34 1.271.535 2 .535h1.778v-1H4c-.548 0-1.06-.146-1.5-.4Zm15.722.4v1H20c.729 0 1.412-.195 2-.535l-.5-.866c-.44.255-.952.401-1.5.401h-1.778ZM23 5.778h1V4c0-.729-.195-1.412-.535-2l-.866.5c.255.44.401.952.401 1.5v1.778ZM4 0h1.778v1H4c-.548 0-1.06.146-1.5.4L2 .536A3.982 3.982 0 0 1 4 0ZM1 18.222H0V20c0 .729.195 1.412.535 2l.866-.5C1.146 21.06 1 20.547 1 20v-1.778Zm0-1.778H0V12.89h1v3.555Zm0-5.333H0V7.556h1v3.555Zm0-5.333H0V4c0-.729.195-1.412.535-2l.866.5C1.146 2.94 1 3.452 1 4v1.778ZM7.556 1V0h3.555v1H7.556Zm5.333 0V0h3.555v1H12.89Zm5.333 0V0H20c.729 0 1.412.195 2 .535l-.5.866C21.06 1.146 20.547 1 20 1h-1.778ZM23 7.556h1v3.555h-1V7.556Zm0 5.333h1v3.555h-1V12.89Zm0 5.333h1V20c0 .729-.195 1.412-.535 2l-.866-.5c.255-.44.401-.952.401-1.5v-1.778ZM16.444 23v1H12.89v-1h3.555Zm-5.333 0v1H7.556v-1h3.555ZM9.055 9.82l-.03-.703H8v6.34h1.084v-4.629c.262-.605.748-.908 1.459-.908.902 0 1.354.46 1.354 1.383v4.154h1.09V11.25c.042-.406.197-.729.462-.967.266-.242.6-.363 1.002-.363.489 0 .836.113 1.043.34.207.222.31.56.31 1.013v4.184h1.085v-4.248C16.865 9.736 16.159 9 14.768 9c-.461 0-.862.094-1.202.281a2.41 2.41 0 0 0-.82.739c-.32-.68-.924-1.02-1.81-1.02-.79 0-1.416.273-1.881.82Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">пример размеров</div>
+            </div>
+
+            <div>
+              <div class="od-icon od-icon_size_s od-icon_view_primary">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
+                  />
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m2.906 10.026 2.188-2.052 6.406 6.833 6.406-6.833 2.188 2.052-8.594 9.167-8.594-9.167Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">arrow-down</div>
+            </div>
+
+            <div>
+              <div class="od-icon od-icon_size_s od-icon_view_primary">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m9.646 3.646.707.708L6.708 8l3.647 3.646-.708.708L5.293 8l4.353-4.354Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="od-icon od-icon_size_m od-icon_view_primary icon__is-not-ready"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M.716 22.284 0 23l.707.707.68-.679A3.984 3.984 0 0 0 4 24h16c.85 0 1.637-.265 2.284-.716L23 24l.707-.707-.679-.68A3.984 3.984 0 0 0 24 20V4c0-1-.366-1.913-.972-2.614l.68-.679L23 0l-.716.716A3.981 3.981 0 0 0 20 0H4C3 0 2.087.366 1.386.972L.707.293 0 1l.716.716A3.982 3.982 0 0 0 0 4v16c0 .85.265 1.637.716 2.284Zm1.38.034A2.987 2.987 0 0 0 4 23h16c.572 0 1.107-.16 1.562-.438l-9.855-9.855-9.611 9.611ZM11 12l-9.562 9.562A2.986 2.986 0 0 1 1 20V4c0-.572.16-1.107.438-1.562L11 12Zm1.414 0 9.904 9.904A2.987 2.987 0 0 0 23 20V4c0-.723-.256-1.386-.682-1.904L12.414 12Zm9.148-10.562-9.855 9.855-9.611-9.611A2.988 2.988 0 0 1 4 1h16c.572 0 1.107.16 1.562.438Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <rect width="24" height="24" rx="4" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="icon__description">arrow-left</div>
+            </div>
+
+            <div>
+              <div class="od-icon od-icon_size_s od-icon_view_primary">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m12.354 9.646-.708.707L8 6.708l-3.646 3.647-.708-.708L8 5.293l4.354 4.353Z"
+                  />
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m21.094 15.974-2.188 2.052-6.406-6.833-6.406 6.833-2.188-2.052L12.5 6.807l8.594 9.167Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">arrow-up</div>
+            </div>
+
+            <div>
+              <div
+                class="od-icon od-icon_size_s od-icon_view_primary icon__is-not-ready"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M.716 14.284 0 15l.707.707.68-.679A3.984 3.984 0 0 0 4 16h8c.85 0 1.636-.265 2.284-.716L15 16l.707-.707-.679-.68A3.984 3.984 0 0 0 16 12V4c0-1-.366-1.913-.972-2.614l.68-.679L15 0l-.716.716A3.981 3.981 0 0 0 12 0H4C3 0 2.087.366 1.386.972L.707.293 0 1l.716.716A3.982 3.982 0 0 0 0 4v8c0 .85.265 1.636.716 2.284Zm1.38.034A2.987 2.987 0 0 0 4 15h8c.572 0 1.107-.16 1.562-.438L7.707 8.707l-5.611 5.611ZM7 8l-5.562 5.562A2.986 2.986 0 0 1 1 12V4c0-.572.16-1.107.438-1.562L7 8Zm1.414 0 5.904 5.904A2.987 2.987 0 0 0 15 12V4c0-.723-.256-1.386-.682-1.904L8.414 8Zm5.148-6.562L7.707 7.293 2.096 1.682A2.988 2.988 0 0 1 4 1h8c.572 0 1.107.16 1.562.438Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <rect width="16" height="16" rx="4" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm12-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-4Zm-2 12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4Zm-8-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H5Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">cards</div>
+            </div>
+
+            <div>
+              <div
+                class="od-icon od-icon_size_s od-icon_view_primary icon__is-not-ready"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M.716 14.284 0 15l.707.707.68-.679A3.984 3.984 0 0 0 4 16h8c.85 0 1.636-.265 2.284-.716L15 16l.707-.707-.679-.68A3.984 3.984 0 0 0 16 12V4c0-1-.366-1.913-.972-2.614l.68-.679L15 0l-.716.716A3.981 3.981 0 0 0 12 0H4C3 0 2.087.366 1.386.972L.707.293 0 1l.716.716A3.982 3.982 0 0 0 0 4v8c0 .85.265 1.636.716 2.284Zm1.38.034A2.987 2.987 0 0 0 4 15h8c.572 0 1.107-.16 1.562-.438L7.707 8.707l-5.611 5.611ZM7 8l-5.562 5.562A2.986 2.986 0 0 1 1 12V4c0-.572.16-1.107.438-1.562L7 8Zm1.414 0 5.904 5.904A2.987 2.987 0 0 0 15 12V4c0-.723-.256-1.386-.682-1.904L8.414 8Zm5.148-6.562L7.707 7.293 2.096 1.682A2.988 2.988 0 0 1 4 1h8c.572 0 1.107.16 1.562.438Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <rect width="16" height="16" rx="4" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="m19.282 6.304 1.436 1.392-11.385 11.74-6.05-6.24 1.435-1.392 4.615 4.76 9.95-10.26Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">check</div>
+            </div>
+
+            <div>
+              <div
+                class="od-icon od-icon_size_s od-icon_view_primary icon__is-not-ready"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_63_2323)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.715853 14.2841L4.68118e-05 14.9999L0.707154 15.707L1.38621 15.028C2.08725 15.6337 3.00084 16 4 16H12C12.8492 16 13.6365 15.7354 14.2841 15.2841L15 16.0001L15.7072 15.293L15.028 14.6138C15.6337 13.9127 16 12.9992 16 12V4C16 3.00084 15.6337 2.08725 15.028 1.38621L15.7072 0.707031L15 -7.55191e-05L14.2841 0.715853C13.6365 0.264602 12.8492 0 12 0H4C3.00084 0 2.08725 0.366339 1.38621 0.972026L0.707153 0.292969L4.65512e-05 1.00008L0.715853 1.71588C0.264602 2.36348 0 3.15084 0 4V12C0 12.8492 0.264602 13.6365 0.715853 14.2841ZM2.09584 14.3183C2.61382 14.7443 3.27705 15 4 15H12C12.5722 15 13.1069 14.8398 13.5618 14.5619L7.70708 8.70711L2.09584 14.3183ZM6.99997 8L1.43812 13.5618C1.16017 13.1069 1 12.5722 1 12V4C1 3.42784 1.16017 2.8931 1.43812 2.43815L6.99997 8ZM8.41418 8L14.3183 13.9042C14.7443 13.3862 15 12.723 15 12V4C15 3.27705 14.7443 2.61382 14.3183 2.09584L8.41418 8ZM13.5618 1.43812L7.70708 7.29289L2.09584 1.68166C2.61382 1.25573 3.27705 1 4 1H12C12.5722 1 13.1069 1.16017 13.5618 1.43812Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_63_2323">
+                      <rect width="16" height="16" rx="4" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4531 15.5953C13.4178 15.5604 13.3702 15.5408 13.3207 15.5408C13.2711 15.5408 13.2235 15.5604 13.1882 15.5953L10.4648 18.3187C9.20386 19.5796 7.07573 19.7132 5.68354 18.3187C4.28901 16.9242 4.42261 14.7984 5.68354 13.5375L8.40698 10.814C8.47964 10.7414 8.47964 10.6218 8.40698 10.5492L7.47417 9.61636C7.43893 9.58146 7.39134 9.56189 7.34175 9.56189C7.29215 9.56189 7.24457 9.58146 7.20933 9.61636L4.48589 12.3398C2.50308 14.3226 2.50308 17.5312 4.48589 19.5117C6.4687 21.4921 9.67729 21.4945 11.6578 19.5117L14.3812 16.7882C14.4539 16.7156 14.4539 16.596 14.3812 16.5234L13.4531 15.5953ZM19.514 4.48589C17.5312 2.50308 14.3226 2.50308 12.3421 4.48589L9.61636 7.20933C9.58146 7.24457 9.56189 7.29215 9.56189 7.34175C9.56189 7.39134 9.58146 7.43893 9.61636 7.47417L10.5468 8.40464C10.6195 8.47729 10.739 8.47729 10.8117 8.40464L13.5351 5.6812C14.796 4.42026 16.9242 4.28667 18.3164 5.6812C19.7109 7.07573 19.5773 9.20151 18.3164 10.4625L15.5929 13.1859C15.558 13.2211 15.5385 13.2687 15.5385 13.3183C15.5385 13.3679 15.558 13.4155 15.5929 13.4507L16.5257 14.3835C16.5984 14.4562 16.7179 14.4562 16.7906 14.3835L19.514 11.6601C21.4945 9.67729 21.4945 6.4687 19.514 4.48589V4.48589ZM14.2992 8.72573C14.2639 8.69084 14.2163 8.67126 14.1667 8.67126C14.1172 8.67126 14.0696 8.69084 14.0343 8.72573L8.72573 14.032C8.69084 14.0672 8.67126 14.1148 8.67126 14.1644C8.67126 14.214 8.69084 14.2616 8.72573 14.2968L9.65386 15.2249C9.72651 15.2976 9.84605 15.2976 9.9187 15.2249L15.2249 9.9187C15.2976 9.84605 15.2976 9.72651 15.2249 9.65386L14.2992 8.72573Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">link</div>
+            </div>
+
+            <div>
+              <div
+                class="od-icon od-icon_size_s od-icon_view_primary icon__is-not-ready"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M.716 14.284 0 15l.707.707.68-.679A3.984 3.984 0 0 0 4 16h8c.85 0 1.636-.265 2.284-.716L15 16l.707-.707-.679-.68A3.984 3.984 0 0 0 16 12V4c0-1-.366-1.913-.972-2.614l.68-.679L15 0l-.716.716A3.981 3.981 0 0 0 12 0H4C3 0 2.087.366 1.386.972L.707.293 0 1l.716.716A3.982 3.982 0 0 0 0 4v8c0 .85.265 1.636.716 2.284Zm1.38.034A2.987 2.987 0 0 0 4 15h8c.572 0 1.107-.16 1.562-.438L7.707 8.707l-5.611 5.611ZM7 8l-5.562 5.562A2.986 2.986 0 0 1 1 12V4c0-.572.16-1.107.438-1.562L7 8Zm1.414 0 5.904 5.904A2.987 2.987 0 0 0 15 12V4c0-.723-.256-1.386-.682-1.904L8.414 8Zm5.148-6.562L7.707 7.293 2.096 1.682A2.988 2.988 0 0 1 4 1h8c.572 0 1.107.16 1.562.438Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <rect width="16" height="16" rx="4" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 3a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2H3Zm0 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm-1 6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm7-14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Zm-1 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">list</div>
+            </div>
+
+            <div>
+              <div
+                class="od-icon od-icon_size_s od-icon_view_primary icon__is-not-ready"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M.716 14.284 0 15l.707.707.68-.679A3.984 3.984 0 0 0 4 16h8c.85 0 1.636-.265 2.284-.716L15 16l.707-.707-.679-.68A3.984 3.984 0 0 0 16 12V4c0-1-.366-1.913-.972-2.614l.68-.679L15 0l-.716.716A3.981 3.981 0 0 0 12 0H4C3 0 2.087.366 1.386.972L.707.293 0 1l.716.716A3.982 3.982 0 0 0 0 4v8c0 .85.265 1.636.716 2.284Zm1.38.034A2.987 2.987 0 0 0 4 15h8c.572 0 1.107-.16 1.562-.438L7.707 8.707l-5.611 5.611ZM7 8l-5.562 5.562A2.986 2.986 0 0 1 1 12V4c0-.572.16-1.107.438-1.562L7 8Zm1.414 0 5.904 5.904A2.987 2.987 0 0 0 15 12V4c0-.723-.256-1.386-.682-1.904L8.414 8Zm5.148-6.562L7.707 7.293 2.096 1.682A2.988 2.988 0 0 1 4 1h8c.572 0 1.107.16 1.562.438Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <rect width="16" height="16" rx="4" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="od-icon od-icon_size_m od-icon_view_primary">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m20.444 19.152-3.837-3.836a6.968 6.968 0 0 0 1.456-4.285c0-1.88-.734-3.642-2.06-4.97A6.98 6.98 0 0 0 11.03 4a6.989 6.989 0 0 0-4.97 2.06A6.975 6.975 0 0 0 4 11.031c0 1.878.734 3.645 2.06 4.971a6.975 6.975 0 0 0 4.971 2.06c1.57 0 3.061-.51 4.282-1.453l3.837 3.835a.195.195 0 0 0 .136.056.193.193 0 0 0 .136-.056l1.022-1.02a.193.193 0 0 0 0-.272Zm-5.7-4.408a5.222 5.222 0 0 1-3.713 1.537 5.222 5.222 0 0 1-3.712-1.537A5.222 5.222 0 0 1 5.78 11.03c0-1.401.546-2.72 1.538-3.712A5.222 5.222 0 0 1 11.03 5.78c1.402 0 2.721.544 3.713 1.538a5.222 5.222 0 0 1 1.537 3.712 5.218 5.218 0 0 1-1.537 3.713Z"
+                  />
+                </svg>
+              </div>
+              <div class="icon__description">search</div>
+            </div>
+          </div>
+
+          <!-- превью -->
+          <div class="row-block__description">Визуальный стиль</div>
+          <div class="icon__specs">
+            <div>
+              <div class="icon__wrapper icon__wrapper_bg_primary">
+                <div class="od-icon od-icon_size_m od-icon_view_primary">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4531 15.5953C13.4178 15.5604 13.3702 15.5408 13.3207 15.5408C13.2711 15.5408 13.2235 15.5604 13.1882 15.5953L10.4648 18.3187C9.20386 19.5796 7.07573 19.7132 5.68354 18.3187C4.28901 16.9242 4.42261 14.7984 5.68354 13.5375L8.40698 10.814C8.47964 10.7414 8.47964 10.6218 8.40698 10.5492L7.47417 9.61636C7.43893 9.58146 7.39134 9.56189 7.34175 9.56189C7.29215 9.56189 7.24457 9.58146 7.20933 9.61636L4.48589 12.3398C2.50308 14.3226 2.50308 17.5312 4.48589 19.5117C6.4687 21.4921 9.67729 21.4945 11.6578 19.5117L14.3812 16.7882C14.4539 16.7156 14.4539 16.596 14.3812 16.5234L13.4531 15.5953ZM19.514 4.48589C17.5312 2.50308 14.3226 2.50308 12.3421 4.48589L9.61636 7.20933C9.58146 7.24457 9.56189 7.29215 9.56189 7.34175C9.56189 7.39134 9.58146 7.43893 9.61636 7.47417L10.5468 8.40464C10.6195 8.47729 10.739 8.47729 10.8117 8.40464L13.5351 5.6812C14.796 4.42026 16.9242 4.28667 18.3164 5.6812C19.7109 7.07573 19.5773 9.20151 18.3164 10.4625L15.5929 13.1859C15.558 13.2211 15.5385 13.2687 15.5385 13.3183C15.5385 13.3679 15.558 13.4155 15.5929 13.4507L16.5257 14.3835C16.5984 14.4562 16.7179 14.4562 16.7906 14.3835L19.514 11.6601C21.4945 9.67729 21.4945 6.4687 19.514 4.48589V4.48589ZM14.2992 8.72573C14.2639 8.69084 14.2163 8.67126 14.1667 8.67126C14.1172 8.67126 14.0696 8.69084 14.0343 8.72573L8.72573 14.032C8.69084 14.0672 8.67126 14.1148 8.67126 14.1644C8.67126 14.214 8.69084 14.2616 8.72573 14.2968L9.65386 15.2249C9.72651 15.2976 9.84605 15.2976 9.9187 15.2249L15.2249 9.9187C15.2976 9.84605 15.2976 9.72651 15.2249 9.65386L14.2992 8.72573Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-icon od-icon_size_m od-icon_view_primary"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="icon__wrapper icon__wrapper_bg_accent">
+                <div class="od-icon od-icon_size_m od-icon_view_inverse">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4531 15.5953C13.4178 15.5604 13.3702 15.5408 13.3207 15.5408C13.2711 15.5408 13.2235 15.5604 13.1882 15.5953L10.4648 18.3187C9.20386 19.5796 7.07573 19.7132 5.68354 18.3187C4.28901 16.9242 4.42261 14.7984 5.68354 13.5375L8.40698 10.814C8.47964 10.7414 8.47964 10.6218 8.40698 10.5492L7.47417 9.61636C7.43893 9.58146 7.39134 9.56189 7.34175 9.56189C7.29215 9.56189 7.24457 9.58146 7.20933 9.61636L4.48589 12.3398C2.50308 14.3226 2.50308 17.5312 4.48589 19.5117C6.4687 21.4921 9.67729 21.4945 11.6578 19.5117L14.3812 16.7882C14.4539 16.7156 14.4539 16.596 14.3812 16.5234L13.4531 15.5953ZM19.514 4.48589C17.5312 2.50308 14.3226 2.50308 12.3421 4.48589L9.61636 7.20933C9.58146 7.24457 9.56189 7.29215 9.56189 7.34175C9.56189 7.39134 9.58146 7.43893 9.61636 7.47417L10.5468 8.40464C10.6195 8.47729 10.739 8.47729 10.8117 8.40464L13.5351 5.6812C14.796 4.42026 16.9242 4.28667 18.3164 5.6812C19.7109 7.07573 19.5773 9.20151 18.3164 10.4625L15.5929 13.1859C15.558 13.2211 15.5385 13.2687 15.5385 13.3183C15.5385 13.3679 15.558 13.4155 15.5929 13.4507L16.5257 14.3835C16.5984 14.4562 16.7179 14.4562 16.7906 14.3835L19.514 11.6601C21.4945 9.67729 21.4945 6.4687 19.514 4.48589V4.48589ZM14.2992 8.72573C14.2639 8.69084 14.2163 8.67126 14.1667 8.67126C14.1172 8.67126 14.0696 8.69084 14.0343 8.72573L8.72573 14.032C8.69084 14.0672 8.67126 14.1148 8.67126 14.1644C8.67126 14.214 8.69084 14.2616 8.72573 14.2968L9.65386 15.2249C9.72651 15.2976 9.84605 15.2976 9.9187 15.2249L15.2249 9.9187C15.2976 9.84605 15.2976 9.72651 15.2249 9.65386L14.2992 8.72573Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-icon od-icon_size_m od-icon_view_inverse"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+
+            <div>
+              <div class="icon__wrapper icon__wrapper_bg_primary">
+                <div class="od-icon od-icon_size_m od-icon_view_secondary">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4531 15.5953C13.4178 15.5604 13.3702 15.5408 13.3207 15.5408C13.2711 15.5408 13.2235 15.5604 13.1882 15.5953L10.4648 18.3187C9.20386 19.5796 7.07573 19.7132 5.68354 18.3187C4.28901 16.9242 4.42261 14.7984 5.68354 13.5375L8.40698 10.814C8.47964 10.7414 8.47964 10.6218 8.40698 10.5492L7.47417 9.61636C7.43893 9.58146 7.39134 9.56189 7.34175 9.56189C7.29215 9.56189 7.24457 9.58146 7.20933 9.61636L4.48589 12.3398C2.50308 14.3226 2.50308 17.5312 4.48589 19.5117C6.4687 21.4921 9.67729 21.4945 11.6578 19.5117L14.3812 16.7882C14.4539 16.7156 14.4539 16.596 14.3812 16.5234L13.4531 15.5953ZM19.514 4.48589C17.5312 2.50308 14.3226 2.50308 12.3421 4.48589L9.61636 7.20933C9.58146 7.24457 9.56189 7.29215 9.56189 7.34175C9.56189 7.39134 9.58146 7.43893 9.61636 7.47417L10.5468 8.40464C10.6195 8.47729 10.739 8.47729 10.8117 8.40464L13.5351 5.6812C14.796 4.42026 16.9242 4.28667 18.3164 5.6812C19.7109 7.07573 19.5773 9.20151 18.3164 10.4625L15.5929 13.1859C15.558 13.2211 15.5385 13.2687 15.5385 13.3183C15.5385 13.3679 15.558 13.4155 15.5929 13.4507L16.5257 14.3835C16.5984 14.4562 16.7179 14.4562 16.7906 14.3835L19.514 11.6601C21.4945 9.67729 21.4945 6.4687 19.514 4.48589V4.48589ZM14.2992 8.72573C14.2639 8.69084 14.2163 8.67126 14.1667 8.67126C14.1172 8.67126 14.0696 8.69084 14.0343 8.72573L8.72573 14.032C8.69084 14.0672 8.67126 14.1148 8.67126 14.1644C8.67126 14.214 8.69084 14.2616 8.72573 14.2968L9.65386 15.2249C9.72651 15.2976 9.84605 15.2976 9.9187 15.2249L15.2249 9.9187C15.2976 9.84605 15.2976 9.72651 15.2249 9.65386L14.2992 8.72573Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-icon od-icon_size_m od-icon_view_secondary"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- иконки -->
+
+      <!-- логотип -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Логотип</div>
+          <div class="row-block__description">od-logo</div>
+        </div>
+
+        <div>
+          <div class="row-block__description">Логотип сервиса</div>
+          <div class="logo-preview">
+            <div class="od-logo">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.8335 4.1665C12.2812 4.1665 11.8335 4.61422 11.8335 5.1665V24.8332C11.8335 25.3855 12.2812 25.8332 12.8335 25.8332H25.0002C25.5524 25.8332 26.0002 25.3855 26.0002 24.8332V9.58072C26.0002 9.3155 25.8948 9.06115 25.7073 8.87361L21.2931 4.4594C21.1055 4.27186 20.8512 4.1665 20.5859 4.1665H12.8335ZM20.5835 5.4165V8.58317C20.5835 9.13546 21.0312 9.58317 21.5835 9.58317H24.7502L20.5835 5.4165Z"
+                />
+                <path
+                  d="M6 7.76401C6 7.51958 6.08952 7.28362 6.25165 7.1007L9 4V26H7C6.44772 26 6 25.5523 6 25V7.76401Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- логотип -->
+
+      <!-- поле поиска -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Поле поиска</div>
+          <div class="row-block__description">od-search-field</div>
+        </div>
+
+        <div class="input">
+          <div class="row-block__description">Поле для поиска по сервису</div>
+
+          <div class="search-field__preview">
+            <div class="od-search-field">
+              <input
+                class="od-search-field__input od-text od-text_size_l od-text_weight_regular"
+                placeholder="Поиск по документам"
+                type="text"
+                name="name"
+              />
+            </div>
+          </div>
+
+          <div>
+            <pre><code id="input_code" class="language-html">&lt;div class="od-search-field"&gt;...&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- поле поиска -->
+
+      <!-- кнопка -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Кнопка</div>
+          <div class="row-block__description">od-button</div>
+        </div>
+
+        <div class="btn">
+          <div class="row-block__description">
+            Кнопка. Используется, когда человеку нужно сделать выбор,
+            подтвердить или совершить какое-то действие. Например, отправить
+            сообщение, оплатить заказ, сохранить изменения, войти в акканут.
+          </div>
+
+          <div class="btn__preview">
+            <div>
+              <div class="btn__wrapper">
+                <button class="od-button od-button_view_primary">
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="m19.282 6.304 1.436 1.392-11.385 11.74-6.05-6.24 1.435-1.392 4.615 4.76 9.95-10.26Z"
+                      />
+                    </svg>
+                  </div>
+                  <span class="od-text od-text_size_m od-text_weight_medium"
+                    >Подписать</span
+                  >
+                </button>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-button od-button_view_primary"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="btn__wrapper">
+                <button
+                  class="od-button od-button_view_primary mix_status_success"
+                >
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="m19.282 6.304 1.436 1.392-11.385 11.74-6.05-6.24 1.435-1.392 4.615 4.76 9.95-10.26Z"
+                      />
+                    </svg>
+                  </div>
+                  <span class="od-text od-text_size_m od-text_weight_medium"
+                    >Подписать</span
+                  >
+                </button>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-button od-button_view_primary mix_status_success"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="btn__wrapper">
+                <button class="od-button od-button_view_secondary">
+                  <span class="od-text od-text_size_m od-text_weight_medium"
+                    >Подписать</span
+                  >
+                </button>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-button od-button_view_secondary"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="btn__wrapper">
+                <button class="od-button od-button_view_transparent">
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.4531 15.5953C13.4178 15.5604 13.3702 15.5408 13.3207 15.5408C13.2711 15.5408 13.2235 15.5604 13.1882 15.5953L10.4648 18.3187C9.20386 19.5796 7.07573 19.7132 5.68354 18.3187C4.28901 16.9242 4.42261 14.7984 5.68354 13.5375L8.40698 10.814C8.47964 10.7414 8.47964 10.6218 8.40698 10.5492L7.47417 9.61636C7.43893 9.58146 7.39134 9.56189 7.34175 9.56189C7.29215 9.56189 7.24457 9.58146 7.20933 9.61636L4.48589 12.3398C2.50308 14.3226 2.50308 17.5312 4.48589 19.5117C6.4687 21.4921 9.67729 21.4945 11.6578 19.5117L14.3812 16.7882C14.4539 16.7156 14.4539 16.596 14.3812 16.5234L13.4531 15.5953ZM19.514 4.48589C17.5312 2.50308 14.3226 2.50308 12.3421 4.48589L9.61636 7.20933C9.58146 7.24457 9.56189 7.29215 9.56189 7.34175C9.56189 7.39134 9.58146 7.43893 9.61636 7.47417L10.5468 8.40464C10.6195 8.47729 10.739 8.47729 10.8117 8.40464L13.5351 5.6812C14.796 4.42026 16.9242 4.28667 18.3164 5.6812C19.7109 7.07573 19.5773 9.20151 18.3164 10.4625L15.5929 13.1859C15.558 13.2211 15.5385 13.2687 15.5385 13.3183C15.5385 13.3679 15.558 13.4155 15.5929 13.4507L16.5257 14.3835C16.5984 14.4562 16.7179 14.4562 16.7906 14.3835L19.514 11.6601C21.4945 9.67729 21.4945 6.4687 19.514 4.48589V4.48589ZM14.2992 8.72573C14.2639 8.69084 14.2163 8.67126 14.1667 8.67126C14.1172 8.67126 14.0696 8.69084 14.0343 8.72573L8.72573 14.032C8.69084 14.0672 8.67126 14.1148 8.67126 14.1644C8.67126 14.214 8.69084 14.2616 8.72573 14.2968L9.65386 15.2249C9.72651 15.2976 9.84605 15.2976 9.9187 15.2249L15.2249 9.9187C15.2976 9.84605 15.2976 9.72651 15.2249 9.65386L14.2992 8.72573Z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-button od-button_view_transparent"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- кнопка -->
+
+      <!-- радиогруппа -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Горизонтальный переключатель</div>
+          <div class="row-block__description">od-radio-group</div>
+        </div>
+
+        <div class="radio-group">
+          <div class="row-block__description">
+            Выполняет фильтрацию контента, работает по принципу радиокнопки. В
+            интерфейсе обычно используется в количестве 2+.
+          </div>
+          <div>
+            <div class="radio-group__wrapper">
+              <div class="od-radio-group">
+                <input
+                  type="radio"
+                  id="radio-1"
+                  name="radio-categories"
+                  value="all"
+                  checked="true"
+                />
+                <label for="radio-1">
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm12-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-4Zm-2 12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4Zm-8-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H5Z"
+                      />
+                    </svg>
+                  </div>
+                </label>
+
+                <input
+                type="radio"
+                id="radio-2"
+                name="radio-categories"
+                value="sport"
+              />
+              <label for="radio-2">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 3a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2H3Zm0 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm-1 6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm7-14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Zm-1 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Z"
+                    />
+                  </svg>
+                </div>
+              </label>
+
+                <input
+                  type="radio"
+                  id="radio-3"
+                  name="radio-categories"
+                  value="sport"
+                />
+                <label for="radio-3">
+                  <div class="od-icon od-icon_size_m">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 3a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2H3Zm0 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm-1 6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H3Zm7-14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Zm-1 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H11a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H11Z"
+                      />
+                    </svg>
+                  </div>
+                </label>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-radio-group"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- радиогруппа -->
+
+      <!-- Боковая навигация -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Боковая навигация</div>
+          <div class="row-block__description">od-sidenav</div>
+        </div>
+
+        <div class="sidenav">
+          <div class="row-block__description">
+            Элементы боковой навигации приложения. Все пробелы должны быть неразрывными: <strong>&ampnbsp;</strong>
+          </div>
+          <div class="sidenav__preview">
+            <div>
+              <div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-opened">
+                <div class="od-icon od-icon_size_s">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m12.354 9.646-.708.707L8 6.708l-3.646 3.647-.708-.708L8 5.293l4.354 4.353Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_xs od-text_weight_regular">Открытый&nbsp;заголовок&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-opened"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-closed">
+                <div class="od-icon od-icon_size_s">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m3.646 6.354.708-.708L8 9.293l3.646-3.647.708.708L8 10.707 3.646 6.354Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_xs od-text_weight_regular">Закрытый&nbsp;заголовок&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__heading od-sidenav__heading_state_is-closed"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-sidenav od-sidenav__list-item od-sidenav__heading_state_default">
+                <p class="od-text od-text_size_s od-text_weight_regular">Пункт&nbsp;меню&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__list-item od-sidenav__heading_state_default"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-sidenav od-sidenav__list-item od-sidenav__list-item_state_selected">
+                <p class="od-text od-text_size_s od-text_weight_regular">Пункт&nbsp;меню&nbsp;с&nbsp;неразрывным&nbsp;пробелом</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-sidenav od-sidenav__list-item od-sidenav__list-item_state_selected"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Боковая навигация -->
+      
+      <!-- ссылка -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Ссылка</div>
+          <div class="row-block__description">od-link</div>
+        </div>
+
+        <div class="link">
+          <div class="row-block__description">
+            Классическая ссылка
+          </div>
+          <div class="link__preview">
+           <div class="od-link">
+            <div class="od-icon od-icon_size_s">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="m9.646 3.646.707.708L6.708 8l3.647 3.646-.708.708L5.293 8l4.353-4.354Z"
+                />
+              </svg>
+            </div>
+            <p class="od-text od-text_size_s od-text_weight_regular">Все&nbsp;документы</p>
+           </div>
+           <pre><code class="language-html">&lt;div class="od-link"&gt;...&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- ссылка -->
+
+      <!-- карточка -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Карточка</div>
+          <div class="row-block__description">od-card</div>
+        </div>
+
+        <div class="card">
+          <div class="row-block__description">
+            Неразрывные пробелы в названии использовать не нужно, максимум 2 строки
+          </div>
+          <div class="card__preview">
+           <div class="od-card">
+            <div class="od-card__header">
+              <p class="od-text od-text_size_s od-text_weight_bold">Длинное название документа в несколько строк</p>
+              <button class="od-button od-button_view_transparent">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4531 15.5953C13.4178 15.5604 13.3702 15.5408 13.3207 15.5408C13.2711 15.5408 13.2235 15.5604 13.1882 15.5953L10.4648 18.3187C9.20386 19.5796 7.07573 19.7132 5.68354 18.3187C4.28901 16.9242 4.42261 14.7984 5.68354 13.5375L8.40698 10.814C8.47964 10.7414 8.47964 10.6218 8.40698 10.5492L7.47417 9.61636C7.43893 9.58146 7.39134 9.56189 7.34175 9.56189C7.29215 9.56189 7.24457 9.58146 7.20933 9.61636L4.48589 12.3398C2.50308 14.3226 2.50308 17.5312 4.48589 19.5117C6.4687 21.4921 9.67729 21.4945 11.6578 19.5117L14.3812 16.7882C14.4539 16.7156 14.4539 16.596 14.3812 16.5234L13.4531 15.5953ZM19.514 4.48589C17.5312 2.50308 14.3226 2.50308 12.3421 4.48589L9.61636 7.20933C9.58146 7.24457 9.56189 7.29215 9.56189 7.34175C9.56189 7.39134 9.58146 7.43893 9.61636 7.47417L10.5468 8.40464C10.6195 8.47729 10.739 8.47729 10.8117 8.40464L13.5351 5.6812C14.796 4.42026 16.9242 4.28667 18.3164 5.6812C19.7109 7.07573 19.5773 9.20151 18.3164 10.4625L15.5929 13.1859C15.558 13.2211 15.5385 13.2687 15.5385 13.3183C15.5385 13.3679 15.558 13.4155 15.5929 13.4507L16.5257 14.3835C16.5984 14.4562 16.7179 14.4562 16.7906 14.3835L19.514 11.6601C21.4945 9.67729 21.4945 6.4687 19.514 4.48589V4.48589ZM14.2992 8.72573C14.2639 8.69084 14.2163 8.67126 14.1667 8.67126C14.1172 8.67126 14.0696 8.69084 14.0343 8.72573L8.72573 14.032C8.69084 14.0672 8.67126 14.1148 8.67126 14.1644C8.67126 14.214 8.69084 14.2616 8.72573 14.2968L9.65386 15.2249C9.72651 15.2976 9.84605 15.2976 9.9187 15.2249L15.2249 9.9187C15.2976 9.84605 15.2976 9.72651 15.2249 9.65386L14.2992 8.72573Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="od-card__footer">
+              <p class="od-text od-text_size_s od-text_weight_regular">21.03.2022</p>
+            </div>
+           </div>
+           <pre><code class="language-html">&lt;div class="od-card"&gt;...&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- карточка -->
+
+      <!-- управление разделом -->
+      <div class="row-block">
+        <div class="row-block__info">
+          <div class="row-block__name">Коллапс</div>
+          <div class="row-block__description">od-collapse</div>
+        </div>
+
+        <div class="collapse">
+          <div class="row-block__description">
+            По сути работы похож на классический аккордион, только блоки разворачиваются независимо
+          </div>
+          <div class="collapse__preview">
+            <div>
+              <div class="od-collapse od-collapse_state_is-opened">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m21.094 15.974-2.188 2.052-6.406-6.833-6.406 6.833-2.188-2.052L12.5 6.807l8.594 9.167Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_l od-text_weight_bold">Открытый раздел</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-collapse od-collapse_state_is-opened"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+              <div class="od-collapse od-collapse_state_is-closed">
+                <div class="od-icon od-icon_size_m">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m2.906 10.026 2.188-2.052 6.406 6.833 6.406-6.833 2.188 2.052-8.594 9.167-8.594-9.167Z"
+                    />
+                  </svg>
+                </div>
+                <p class="od-text od-text_size_l od-text_weight_bold">Закрытый раздел</p>
+              </div>
+              <pre><code class="language-html">&lt;div class="od-collapse od-collapse_state_is-closed"&gt;...&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- управление разделом -->
+
+    </main>
+    <script src="./js/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <!-- <script src="./js/helpers/content-button.js"></script> -->
+    <!-- <script src="./js/helpers/content-input.js"></script> -->
+  </body>
+</html>

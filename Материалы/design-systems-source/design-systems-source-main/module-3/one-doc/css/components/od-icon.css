@@ -1,0 +1,101 @@
+.od-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: relative;
+}
+
+.od-icon_size_s {
+  width: 16px;
+  height: 16px;
+}
+
+.od-icon_size_m {
+  width: 24px;
+  height: 24px;
+}
+
+.od-icon_view_primary {
+  color: var(--color-text-primary);
+}
+
+.od-icon_view_inverse {
+  color: var(--color-text-inverse);
+}
+
+.od-icon_view_secondary {
+  color: var(--color-text-secondary);
+}
+/* 
+.od-icon_name_preview-s {
+  background-image: url("../../icons/preview/icon-preview-s.svg");
+}
+
+.od-icon_name_preview-m {
+  background-image: url("../../icons/preview/icon-preview-m.svg");
+}
+
+.od-icon_name_arrow-down-s {
+  background-image: url("../../icons/arrow-down/icon-arrow-down-s.svg");
+}
+
+.od-icon_name_arrow-down-m {
+  background-image: url("../../icons/arrow-down/icon-arrow-down-m.svg");
+}
+
+.od-icon_name_arrow-left-s {
+  background-image: url("../../icons/arrow-left/icon-arrow-left-s.svg");
+}
+
+.od-icon_name_arrow-left-m {
+  background-image: url("../../icons/arrow-left/icon-arrow-left-m.svg");
+}
+
+.od-icon_name_arrow-up-s {
+  background-image: url("../../icons/arrow-up/icon-arrow-up-s.svg");
+}
+
+.od-icon_name_arrow-up-m {
+  background-image: url("../../icons/arrow-up/icon-arrow-up-m.svg");
+}
+
+.od-icon_name_cards-s {
+  background-image: url("../../icons/cards/icon-cards-s.svg");
+}
+
+.od-icon_name_cards-m {
+  background-image: url("../../icons/cards/icon-cards-m.svg");
+}
+
+.od-icon_name_check-s {
+  background-image: url("../../icons/check/icon-check-s.svg");
+}
+
+.od-icon_name_check-m {
+  background-image: url("../../icons/check/icon-check-m.svg");
+}
+
+.od-icon_name_link-s {
+  background-image: url("../../icons/link/icon-link-s.svg");
+}
+
+.od-icon_name_link-m {
+  background-image: url("../../icons/link/icon-link-m.svg");
+}
+
+.od-icon_name_list-s {
+  background-image: url("../../icons/list/icon-list-s.svg");
+}
+
+.od-icon_name_list-m {
+  background-image: url("../../icons/list/icon-list-m.svg");
+}
+
+.od-icon_name_search-s {
+  background-image: url("../../icons/search/icon-search-s.svg");
+}
+
+.od-icon_name_search-m {
+  background-image: url("../../icons/search/icon-search-m.svg");
+} */

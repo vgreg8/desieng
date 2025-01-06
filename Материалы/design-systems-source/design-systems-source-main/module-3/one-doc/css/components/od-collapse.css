@@ -1,0 +1,17 @@
+.od-collapse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  border-radius: var(--border-radius-s);
+}
+
+.od-collapse p {
+  margin-left: 8px;
+}
+
+.od-collapse:hover {
+ background-color: var(--color-control-hover);
+}

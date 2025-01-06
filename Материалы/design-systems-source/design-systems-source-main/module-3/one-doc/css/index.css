@@ -1,0 +1,88 @@
+:root {
+  /* акцентные цвета */
+  --color-accent-main: #1a9af6;
+  --color-accent-success: #33a459;
+  /* цвета текста */
+  --color-text-primary: #000000;
+
+  /* opacity 60 */
+  --color-text-secondary: #666666;
+
+  /* opacity 40 */
+  --color-text-main: #999999;
+
+  --color-text-inverse: #ffffff;
+  /* цвета фонов */
+  --color-bg-primary: #ffffff;
+  --color-bg-inverse: #282e36;
+  --color-bg-substrate: #f9fafb;
+  --color-bg-divider: rgba(0, 0, 0, 0.1);
+  /* скругления */
+  --border-radius-s: 6px;
+  /* цвета контролов */
+  --color-control-border: rgba(0, 0, 0, 0.2);
+  --color-control-accent-border: rgba(26, 154, 246, 0.6);
+  --color-control-hover: rgba(0, 0, 0, 0.05);
+
+  --color-shadow: rgba(52, 60, 71, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"),
+    url("../font/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"), url("../font/NotoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"), url("../font/NotoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Noto Sans", "apple-system", "Segoe UI", "Roboto", "Oxygen-Sans",
+    "Ubuntu", "Cantrell", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+}
+
+main {
+  margin: 0 20px;
+  overflow-y: scroll;
+}
+
+code {
+  white-space: pre-wrap;
+}
+
+.row-block {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 3fr 9fr;
+  padding: 20px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.row-block__name {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #454a54;
+}
+
+.row-block__description {
+  margin-bottom: 20px;
+  color: rgba(38, 42, 48, 0.4);
+}
